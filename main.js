@@ -154,7 +154,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault();
 
     if (!validate()) {
-      // Focus first error
       const firstError = form.querySelector('.form-error:not(:empty)');
       if (firstError) {
         const input = firstError.previousElementSibling;
@@ -163,36 +162,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       return;
     }
 
-    // Simulate submission
     submitBtn.disabled = true;
     submitBtn.querySelector('.btn-text').textContent = '전송 중...';
 
     try {
-      // Collect form data
-      const data = {
-        name: fields.name.el.value.trim(),
-        org: document.getElementById('org').value.trim(),
-        email: fields.email.el.value.trim(),
-        phone: document.getElementById('phone').value.trim(),
-        program: fields.program.el.value,
-        participants: document.getElementById('participants').value,
-        message: fields.message.el.value.trim(),
-        submittedAt: new Date().toLocaleString('ko-KR'),
-      };
+      const formData = new FormData(form);
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+      const result = await response.json();
 
-      // Here you can integrate with a real backend / FormSubmit / EmailJS
-      // For now, simulate a 1.5s delay and show success
-      await new Promise(resolve => setTimeout(resolve, 1500));
-
-      // Show success
-      form.style.display = 'none';
-      success.hidden = false;
-
-      console.log('Form submitted:', data);
+      if (result.success) {
+        form.style.display = 'none';
+        success.hidden = false;
+      } else {
+        throw new Error(result.message);
+      }
     } catch (err) {
       submitBtn.disabled = false;
       submitBtn.querySelector('.btn-text').textContent = '문의 보내기';
-      alert('전송 중 오류가 발생했습니다. 이메일로 직접 문의해 주세요: seokjungcho@gmail.com');
+      alert('전송 중 오류가 발생했습니다. 직접 연락 주세요: joa7338@hanmail.net');
     }
   });
 })();

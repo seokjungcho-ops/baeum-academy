@@ -667,7 +667,11 @@
     <div class="contact-wrapper">
 
       <!-- 폼 -->
-      <form class="contact-form" id="contactForm" novalidate>
+      <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="5b6b1cda-5cff-47f7-b17c-ba880561114a" />
+        <input type="hidden" name="subject" value="[배움아카데미] 새 교육 문의가 접수되었습니다" />
+        <input type="hidden" name="from_name" value="배움아카데미 홈페이지" />
+        <input type="hidden" name="redirect" value="false" />
         <div class="form-row">
           <div class="form-group">
             <label for="name" class="form-label">이름 <span class="required">*</span></label>
