@@ -749,124 +749,102 @@ button { cursor: pointer; background: none; border: none; }
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 8px 40px rgba(0,0,0,.18);
-}
-.network-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 36px 44px 28px;
-  gap: 24px;
+  gap: 32px;
+  padding: 40px 48px;
 }
-.network-head-left {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-.network-icon-wrap {
-  width: 56px; height: 56px;
-  background: rgba(52,211,153,.15);
-  border: 1px solid rgba(52,211,153,.3);
-  border-radius: 14px;
-  display: flex; align-items: center; justify-content: center;
-  color: #34d399;
-  flex-shrink: 0;
+/* 왼쪽 컬럼 */
+.network-left-col {
+  flex: 1;
+  min-width: 0;
 }
 .network-eyebrow {
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .12em;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .14em;
   text-transform: uppercase;
   color: #34d399;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .network-title {
   font-family: var(--font-serif);
-  font-size: 1.4rem;
+  font-size: 1.55rem;
   font-weight: 700;
   color: #fff;
-  line-height: 1.2;
+  line-height: 1.25;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+.network-desc {
+  font-size: 13.5px;
+  color: rgba(255,255,255,.55);
+  line-height: 1.6;
+  margin-bottom: 20px;
   word-break: keep-all;
 }
+/* 태그 그리드 */
+.network-tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+.network-tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: rgba(255,255,255,.82);
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 8px;
+  padding: 10px 14px;
+  white-space: nowrap;
+  transition: background .2s, border-color .2s;
+}
+.network-tag:hover {
+  background: rgba(52,211,153,.12);
+  border-color: rgba(52,211,153,.35);
+}
+.network-tag-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #34d399;
+  flex-shrink: 0;
+}
+/* 오른쪽: 숫자 뱃지 */
 .network-stat-badge {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(52,211,153,.12);
-  border: 1px solid rgba(52,211,153,.25);
-  border-radius: 16px;
-  padding: 14px 28px;
+  justify-content: center;
+  background: rgba(52,211,153,.1);
+  border: 1px solid rgba(52,211,153,.22);
+  border-radius: 18px;
+  padding: 28px 36px;
   flex-shrink: 0;
+  min-width: 120px;
 }
 .network-stat-num {
   font-family: var(--font-serif);
-  font-size: 2.6rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
   line-height: 1;
 }
 .network-stat-plus {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #34d399;
   vertical-align: super;
 }
 .network-stat-label {
   font-size: 11px;
-  color: rgba(255,255,255,.55);
-  letter-spacing: .06em;
-  margin-top: 4px;
+  color: rgba(255,255,255,.5);
+  letter-spacing: .05em;
+  margin-top: 6px;
   white-space: nowrap;
-}
-.network-divider {
-  height: 1px;
-  background: rgba(255,255,255,.08);
-  margin: 0 44px;
-}
-.network-body {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  padding: 28px 44px 36px;
-  flex-wrap: wrap;
-}
-.network-desc {
-  flex: 1;
-  font-size: var(--text-sm);
-  color: rgba(255,255,255,.65);
-  line-height: 1.85;
-  word-break: keep-all;
-  min-width: 220px;
-}
-.network-tags {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  flex-shrink: 0;
-  min-width: 380px;
-}
-.network-tag {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(255,255,255,.85);
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: 10px;
-  padding: 12px 16px;
-  word-break: keep-all;
-  line-height: 1.4;
-  transition: background .2s;
-}
-.network-tag:hover {
-  background: rgba(52,211,153,.1);
-  border-color: rgba(52,211,153,.3);
-}
-.network-tag-dot {
-  width: 7px; height: 7px;
-  border-radius: 50%;
-  background: #34d399;
-  flex-shrink: 0;
 }
 
 /* ══════════════════ REFERENCES SECTION ══════════════════ */
@@ -953,20 +931,20 @@ button { cursor: pointer; background: none; border: none; }
 /* Responsive additions */
 @media (max-width: 960px) {
   .ref-grid { grid-template-columns: repeat(2, 1fr); }
-  .network-head { padding: 28px 28px 22px; flex-wrap: wrap; gap: 16px; }
-  .network-divider { margin: 0 28px; }
-  .network-body { padding: 22px 28px 28px; gap: 24px; }
-  .network-tags { grid-template-columns: 1fr 1fr; min-width: 0; width: 100%; }
+  .network-block { padding: 32px 32px; gap: 24px; }
+  .network-title { white-space: normal; font-size: 1.35rem; }
+  .network-tags { grid-template-columns: 1fr 1fr; }
+  .network-tag { white-space: normal; }
 }
 @media (max-width: 680px) {
   .ref-grid { grid-template-columns: 1fr; }
   .capability-block { padding: var(--sp-6); }
   .capability-list { grid-template-columns: 1fr; }
-  .network-head { padding: 24px 20px 18px; }
-  .network-divider { margin: 0 20px; }
-  .network-body { padding: 18px 20px 24px; flex-direction: column; gap: 20px; }
-  .network-tags { grid-template-columns: 1fr; min-width: 0; width: 100%; }
-  .network-stat-badge { flex-direction: row; gap: 10px; align-self: flex-start; padding: 10px 18px; }
-  .network-stat-num { font-size: 2rem; }
+  .network-block { flex-direction: column; align-items: stretch; padding: 24px 20px; gap: 20px; }
+  .network-title { white-space: normal; font-size: 1.25rem; }
+  .network-tags { grid-template-columns: 1fr 1fr; }
+  .network-tag { white-space: normal; font-size: 12px; }
+  .network-stat-badge { flex-direction: row; align-items: center; justify-content: flex-start; gap: 12px; padding: 16px 20px; min-width: 0; border-radius: 12px; }
+  .network-stat-num { font-size: 2.2rem; }
   .network-stat-label { margin-top: 0; }
 }
