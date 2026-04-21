@@ -105,6 +105,8 @@ body {
   background: var(--color-bg);
   line-height: 1.75;
   min-height: 100dvh;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 img, svg { display: block; max-width: 100%; }
 ul[role='list'] { list-style: none; }
@@ -478,7 +480,8 @@ button { cursor: pointer; background: none; border: none; }
   background: var(--em-500); flex-shrink: 0; margin-top: 7px;
 }
 .career-item-text {
-  font-size: var(--text-sm); color: var(--n-700); line-height: 1.65; max-width: 100%;
+  font-size: var(--text-sm); color: var(--n-700); line-height: 1.7;
+  max-width: 100%; word-break: keep-all; overflow-wrap: break-word;
 }
 .career-item-text strong { color: var(--n-900); font-weight: 600; }
 
