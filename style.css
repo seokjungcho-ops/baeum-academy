@@ -864,12 +864,12 @@ button { cursor: pointer; background: none; border: none; }
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 20px;
+  gap: 24px;
   margin-bottom: 20px;
 }
 .network-left-col {
   min-width: 0;
-  flex: 1;
+  flex: 1 1 0;
 }
 .network-eyebrow {
   font-size: 10px;
@@ -878,14 +878,17 @@ button { cursor: pointer; background: none; border: none; }
   text-transform: uppercase;
   color: #34d399;
   margin-bottom: 8px;
+  white-space: nowrap;
 }
 .network-title {
   font-family: var(--font-serif);
   font-size: 1.45rem;
   font-weight: 700;
   color: #fff;
-  line-height: 1.35;
+  line-height: 1.4;
   word-break: keep-all;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 .network-stat-badge {
   display: flex;
@@ -897,6 +900,7 @@ button { cursor: pointer; background: none; border: none; }
   border-radius: 16px;
   padding: 16px 24px;
   flex-shrink: 0;
+  min-width: 120px;
 }
 .network-stat-num {
   font-family: var(--font-serif);
@@ -930,11 +934,12 @@ button { cursor: pointer; background: none; border: none; }
   gap: 32px;
 }
 .network-desc {
-  flex: 1;
+  flex: 1 1 0;
   font-size: 13px;
   color: rgba(255,255,255,.55);
   line-height: 1.75;
   word-break: keep-all;
+  overflow-wrap: break-word;
   min-width: 0;
 }
 .network-tags {
@@ -956,6 +961,8 @@ button { cursor: pointer; background: none; border: none; }
   border-radius: 8px;
   padding: 9px 13px;
   word-break: keep-all;
+  overflow-wrap: break-word;
+  white-space: normal;
   transition: background .2s, border-color .2s;
 }
 .network-tag:hover {
@@ -976,22 +983,50 @@ button { cursor: pointer; background: none; border: none; }
 }
 @media (max-width: 680px) {
   .network-block { padding: 24px 20px; }
-  .network-head-row { flex-direction: column; gap: 16px; }
+  /* 제목+뱃지: 뱃지를 아래로 내림 */
+  .network-head-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .network-left-col {
+    width: 100%;
+    flex: none;
+  }
+  .network-title {
+    font-size: 1.3rem;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
   .network-stat-badge {
     flex-direction: row;
     align-items: center;
     gap: 12px;
     padding: 12px 18px;
     width: 100%;
+    min-width: 0;
     justify-content: center;
     border-radius: 12px;
   }
   .network-stat-num { font-size: 2rem; }
-  .network-stat-label { margin-top: 0; }
+  .network-stat-label { margin-top: 0; white-space: nowrap; }
+  /* 하단 설명+태그: 세로 쌓기 */
   .network-body { flex-direction: column; gap: 16px; }
-  .network-desc { font-size: 13px; }
-  .network-tags { grid-template-columns: 1fr 1fr; width: 100%; }
-  .network-tag { font-size: 12px; padding: 8px 11px; }
+  .network-desc { font-size: 13px; width: 100%; }
+  .network-tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 8px;
+  }
+  .network-tag {
+    font-size: 13px;
+    padding: 9px 12px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    white-space: normal;
+  }
 }
 
 /* ══════════════════ REFERENCES SECTION ══════════════════ */
