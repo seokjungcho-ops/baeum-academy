@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>배움아카데미 — AI·HRD 교육 전문기관</title>
+  <meta name="description" content="배움아카데미는 AI 활용·챗GPT 교육, 리더십 워크숍, HRD 컨설팅을 전문으로 하는 교육기관입니다. 강사 조석중." />
+  <meta property="og:title" content="배움아카데미 — AI·HRD 교육 전문기관" />
+  <meta property="og:description" content="22년 현장 경험의 HRD 전문가 조석중이 이끄는 배움아카데미. 챗GPT, AI 활용, 리더십 교육." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ─────────────────── HEADER ─────────────────── -->
+<header class="header" id="header">
+  <div class="header-inner container">
+    <a href="#" class="logo" aria-label="배움아카데미 홈">
+      <!-- 로고: 열린 책 위에 새싹 -->
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+        <rect width="36" height="36" rx="8" fill="#065f46"/>
+        <!-- 책 왼 페이지 -->
+        <path d="M7 10.5C7 10.5 11.5 9.5 18 11.5V26C11.5 24 7 25 7 25Z" fill="none" stroke="white" stroke-width="1.4" stroke-linejoin="round"/>
+        <!-- 책 오른 페이지 -->
+        <path d="M29 10.5C29 10.5 24.5 9.5 18 11.5V26C24.5 24 29 25 29 25Z" fill="none" stroke="white" stroke-width="1.4" stroke-linejoin="round"/>
+        <!-- 새싹 줄기 -->
+        <line x1="18" y1="11" x2="18" y2="8" stroke="#34d399" stroke-width="1.4" stroke-linecap="round"/>
+        <!-- 새싹 왼 잎 -->
+        <path d="M18 9.5C16.5 7.5 13.5 8 14.5 10C15.2 11.2 17 10.5 18 9.5Z" fill="#34d399"/>
+        <!-- 새싹 오른 잎 -->
+        <path d="M18 9.5C19.5 7.5 22.5 8 21.5 10C20.8 11.2 19 10.5 18 9.5Z" fill="#6ee7b7"/>
+      </svg>
+      <span class="logo-text">배움아카데미</span>
+    </a>
+
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#programs" class="nav-link">교육 프로그램</a>
+      <a href="#about"    class="nav-link">강사 소개</a>
+      <a href="#pricing"  class="nav-link">가격 안내</a>
+      <a href="#contact"  class="nav-link nav-link--cta">무료 상담</a>
+    </nav>
+    <button class="mobile-menu-toggle" aria-label="메뉴 열기" id="menuToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#programs" class="mobile-nav-link">교육 프로그램</a>
+    <a href="#about"    class="mobile-nav-link">강사 소개</a>
+    <a href="#pricing"  class="mobile-nav-link">가격 안내</a>
+    <a href="#contact"  class="mobile-nav-link mobile-nav-link--cta">무료 상담</a>
+  </div>
+</header>
+
+<main>
+
+<!-- ─────────────────── HERO ─────────────────── -->
+<section class="hero">
+  <div class="container hero-inner">
+    <!-- 왼쪽: 텍스트 -->
+    <div class="hero-text">
+      <div class="hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        AI 활용 교육 · HRD 컨설팅 · 디지털 생산성
+      </div>
+      <h1 class="hero-title">
+        AI 시대,<br />
+        <em>사람이 중심</em>인<br />
+        교육을 설계합니다
+      </h1>
+      <p class="hero-desc">
+        챗GPT·AI 역량부터 리더십·조직개발까지,<br />
+        22년 현장 경험으로 변화를 이끄는 교육을 기획·운영합니다.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn--primary btn--lg">
+          무료 상담 신청
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#programs" class="btn btn--ghost btn--lg">프로그램 보기</a>
+      </div>
+    </div>
+
+    <!-- 오른쪽: 통계 카드 패널 -->
+    <div class="hero-panel">
+      <p class="hero-panel-title">주요 이력</p>
+      <div class="stat-row">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="stat-body">
+            <span class="stat-num">22년+</span>
+            <span class="stat-label">강의 &amp; 컨설팅 경력</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="stat-body">
+            <span class="stat-num">200H+</span>
+            <span class="stat-label">AI 강의 이력</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+          </div>
+          <div class="stat-body">
+            <span class="stat-num">4권</span>
+            <span class="stat-label">저서 출간 (1권 출간 예정)</span>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <div class="stat-body">
+            <span class="stat-num">공공·기업</span>
+            <span class="stat-label">지방의회·경찰청·대학 등</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── TRUST BAR ─────────────────── -->
+<div class="trust-bar">
+  <div class="container">
+    <div class="trust-bar-inner">
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        전북특별자치도 인재개발원
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        중앙선거관리위원회 선거연수원
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        미국 데일카네기 공인강사
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        전북도민일보 칼럼니스트
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        AI활용전문강사 1급 자격기관
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ─────────────────── PROGRAMS ─────────────────── -->
+<section class="section programs-section" id="programs">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Education Programs</span>
+      <h2 class="section-title">교육 프로그램</h2>
+      <p class="section-desc">현장의 언어로, 실무에 바로 쓰이는 교육</p>
+    </div>
+    <div class="programs-grid">
+
+      <article class="program-card program-card--featured">
+        <div class="program-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <span class="program-tag">핵심 과정</span>
+        <h3 class="program-title">챗GPT · AI 활용 교육</h3>
+        <p class="program-desc">기초 셋팅부터 실무 적용까지. 보고서·보도자료·민원해결·업무기획 등 실질적인 AI 활용 역량을 기릅니다. 공공기관·기업·지방의회 맞춤 커리큘럼 제공.</p>
+        <ul class="program-features" role="list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>챗GPT 기초 설정 및 실무 활용법</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>AI 보고서·제안서·기획서 작성</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>노트북LM·퍼플렉시티 활용 생산성 향상</li>
+        </ul>
+        <div class="program-meta">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>3H · 6H · 1일 과정</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>10~100명</span>
+        </div>
+        <a href="#contact" class="btn btn--primary btn--sm">문의하기</a>
+      </article>
+
+      <article class="program-card">
+        <div class="program-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3 class="program-title">리더십 · 조직 역량개발</h3>
+        <p class="program-desc">미국 데일카네기 공인강사 자격 보유. 기업·공공기관 임직원 대상 리더십, 생산성, 팀빌딩 워크숍을 기획·운영합니다.</p>
+        <ul class="program-features" role="list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>임직원 리더십 개발 과정</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>팀빌딩 &amp; 소통 워크숍</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>변화관리 &amp; 조직문화 개선</li>
+        </ul>
+        <div class="program-meta">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>반일 / 1일 / 2일 과정</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>15~50명</span>
+        </div>
+        <a href="#contact" class="btn btn--outline btn--sm">문의하기</a>
+      </article>
+
+      <article class="program-card">
+        <div class="program-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <h3 class="program-title">독서 · 인문학 강좌</h3>
+        <p class="program-desc">전북도민일보 &lt;조석중의 북트렌드&gt; 칼럼니스트로 활동 중. 책과 인문학적 사유를 통해 조직 문화와 개인 성장을 함께 성찰합니다.</p>
+        <ul class="program-features" role="list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>직장인 독서 토론 모임</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>인문학 기반 리더십 특강</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>기관 북클럽 운영 컨설팅</li>
+        </ul>
+        <div class="program-meta">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2H ~ 정기 운영</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>5~20명</span>
+        </div>
+        <a href="#contact" class="btn btn--outline btn--sm">문의하기</a>
+      </article>
+
+      <article class="program-card">
+        <div class="program-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+        </div>
+        <h3 class="program-title">창업 · HRD 컨설팅</h3>
+        <p class="program-desc">예비창업캠퍼스·도약기업 컨설팅 경험을 바탕으로 창업 역량 강화부터 조직 교육 체계 수립까지 맞춤형 솔루션을 제공합니다.</p>
+        <ul class="program-features" role="list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>예비창업자 역량강화 과정</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>중소기업·소상공인 컨설팅</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>사내 강사 양성 과정</li>
+        </ul>
+        <div class="program-meta">
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>협의 후 결정</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>별도 상담</span>
+        </div>
+        <a href="#contact" class="btn btn--outline btn--sm">문의하기</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── ABOUT ─────────────────── -->
+<section class="section about-section" id="about">
+  <div class="container about-inner">
+
+    <!-- 왼쪽: 프로필 카드 -->
+    <aside>
+      <div class="profile-card">
+        <div class="profile-avatar">
+          <svg width="80" height="90" viewBox="0 0 80 90" fill="none" aria-hidden="true">
+            <circle cx="40" cy="30" r="22" fill="#d1fae5"/>
+            <ellipse cx="40" cy="76" rx="30" ry="18" fill="#d1fae5"/>
+            <circle cx="40" cy="28" r="17" fill="#6ee7b7"/>
+            <ellipse cx="40" cy="72" rx="24" ry="14" fill="#6ee7b7"/>
+          </svg>
+        </div>
+        <div>
+          <h3 class="profile-name">조석중 <span class="profile-hanja">趙石重</span></h3>
+          <p class="profile-title">배움아카데미 대표<br />HRD 컨설턴트 · AI 활용 전문강사</p>
+        </div>
+        <div class="profile-contact">
+          <div class="profile-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 7.09 7.09l1.18-.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="tel:010-4810-4973" class="contact-link">010-4810-4973</a>
+          </div>
+          <div class="profile-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:joa7338@hanmail.net" class="contact-link">joa7338@hanmail.net</a>
+          </div>
+        </div>
+        <div class="profile-tags">
+          <span class="profile-tag">AI활용전문강사 1급</span>
+          <span class="profile-tag">데일카네기 공인강사</span>
+          <span class="profile-tag">HRD 석사</span>
+          <span class="profile-tag">창업학 석사</span>
+          <span class="profile-tag">ESG컨설턴트</span>
+          <span class="profile-tag">칼럼니스트</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 오른쪽: 상세 경력 -->
+    <div class="about-content">
+      <span class="eyebrow">About</span>
+      <h2 class="section-title" style="text-align:left;">강사 소개</h2>
+      <p class="about-lead">
+        인적자원개발(HRD)과 경제통상학을 전공하고, <strong>22년간</strong> 기업·공공기관·교육기관에서 강의와 컨설팅을 진행해 왔습니다. <strong>AI 시대에도 도구를 다루는 인간의 사고력이 먼저</strong>라는 철학으로, 실용적이면서 주체적인 학습 경험을 설계합니다.
+      </p>
+
+      <div class="career-section">
+
+        <!-- 주요 경력 -->
+        <div class="career-block">
+          <div class="career-block-header">
+            <div class="career-block-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            </div>
+            <span class="career-block-title">주요 경력 (22년)</span>
+          </div>
+          <div class="career-list">
+            <div class="career-item">
+              <div class="career-dot"></div>
+              <span class="career-item-text"><strong>배움아카데미 대표</strong> — AI활용전문강사 1급·2급 민간자격기관 운영</span>
+            </div>
+            <div class="career-item">
+              <div class="career-dot"></div>
+              <span class="career-item-text"><strong>미국 데일카네기 공인강사</strong> (2006년~현재) — 기업체·공공기관 리더십·생산성 강의</span>
+            </div>
+            <div class="career-item">
+              <div class="career-dot"></div>
+              <span class="career-item-text"><strong>전북특별자치도 인재개발원</strong> (2005년~현재)</span>
+            </div>
+            <div class="career-item">
+              <div class="career-dot"></div>
+              <span class="career-item-text"><strong>중앙선거관리위원회 선거연수원</strong> 초빙교수</span>
+            </div>
+            <div class="career-item">
+              <div class="career-dot"></div>
+              <span class="career-item-text">㈜하림 팀장교육, 대유위니아 임직원 워크숍, 광주과학기술원, 전북 도약기업·예비창업캠퍼스 컨설팅</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 저서 및 자격 -->
+        <div class="career-block">
+          <div class="career-block-header">
+            <div class="career-block-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <span class="career-block-title">저서 및 자격</span>
+          </div>
+          <div class="career-list">
+            <div class="career-item">
+              <div class="career-dot"></div>
+              <span class="career-item-text">칼럼니스트 · <strong>전북도민일보 &lt;조석중의 북트렌드&gt;</strong> (매주 수요일)</span>
+            </div>
+            <div class="career-item">
+              <div class="career-dot"></div>
+              <span class="career-item-text">《의정활동의 혁신, 챗GPT가 돕는다》 (2025, 부크크) 외 3권 출간 · 《청소년을 위한 AI와 챗GPT 활용법》 (2026, 출간예정)</span>
+            </div>
+            <div class="career-item">
+              <div class="career-dot"></div>
+              <span class="career-item-text">AI활용전문강사 1급 · 마케팅기획전문가 · ESG컨설턴트 · 창업지도사</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 수상 -->
+        <div class="career-block">
+          <div class="career-block-header">
+            <div class="career-block-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <span class="career-block-title">수상 내역</span>
+          </div>
+          <div class="award-grid">
+            <div class="award-item">
+              <svg class="award-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              <div class="award-text"><strong>문화체육부 장관표창</strong> 2019년</div>
+            </div>
+            <div class="award-item">
+              <svg class="award-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              <div class="award-text"><strong>중앙선관위원장 표창</strong> 2024년</div>
+            </div>
+            <div class="award-item">
+              <svg class="award-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              <div class="award-text"><strong>대한민국 평생학습 대상</strong> 교육부장관 (2007)</div>
+            </div>
+            <div class="award-item">
+              <svg class="award-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+              <div class="award-text"><strong>지역혁신대회 아이디어 대상</strong> 전라북도 (2007)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 주요 강의 주제 -->
+        <div class="career-block">
+          <div class="career-block-header">
+            <div class="career-block-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <span class="career-block-title">주요 강의 주제 (AI 관련)</span>
+          </div>
+          <div class="lecture-wrap">
+            <div class="lecture-chips">
+              <span class="lecture-chip">챗GPT 기초 &amp; 활용법</span>
+              <span class="lecture-chip">AI 활용 행정사무감사</span>
+              <span class="lecture-chip">AI 업무역량 강화</span>
+              <span class="lecture-chip">AI 10배 업무 생산성</span>
+              <span class="lecture-chip">AI 활용 전문가 과정</span>
+              <span class="lecture-chip">보고서·제안서 AI 작성</span>
+              <span class="lecture-chip">챗GPT 리서치 기법</span>
+              <span class="lecture-chip">창의적 AI 기획</span>
+              <span class="lecture-chip">AI 활용 법안기획</span>
+              <span class="lecture-chip">데이터 통계 AI 활용</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── TESTIMONIALS ─────────────────── -->
+<section class="section testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Testimonials</span>
+      <h2 class="section-title">수강 후기</h2>
+      <p class="section-desc">실제 교육 현장에서 받은 이야기입니다</p>
+    </div>
+    <div class="testimonials-grid">
+      <blockquote class="testimonial-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="testimonial-text">AI를 단순히 쓰는 게 아니라, 어떻게 생각하며 써야 하는지를 배운 교육이었습니다. 실무에 바로 적용할 수 있었고, 팀 전체가 만족했습니다.</p>
+        <footer class="testimonial-author">
+          <span class="author-name">이○○</span>
+          <span class="author-role">팀장 · 공공기관</span>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="testimonial-text">챗GPT 워크숍이 이렇게 실용적일 줄 몰랐어요. 보고서 작성 시간이 절반으로 줄었습니다. 조석중 강사님 덕분에 팀 생산성이 크게 올랐어요.</p>
+        <footer class="testimonial-author">
+          <span class="author-name">박○○</span>
+          <span class="author-role">과장 · 지방자치단체</span>
+        </footer>
+      </blockquote>
+      <blockquote class="testimonial-card">
+        <div class="quote-mark">&ldquo;</div>
+        <p class="testimonial-text">독서 모임부터 AI 교육까지 폭넓게 다루시는 게 인상적이었습니다. 우리 기관 상황에 딱 맞게 설계되어 매우 만족스러웠습니다.</p>
+        <footer class="testimonial-author">
+          <span class="author-name">최○○</span>
+          <span class="author-role">교육팀장 · 공공기관</span>
+        </footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ─────────────────── PRICING ─────────────────── -->
+<section class="section pricing-section" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Pricing</span>
+      <h2 class="section-title">가격 안내</h2>
+      <p class="section-desc">규모와 내용에 따라 유연하게 협의합니다</p>
+    </div>
+    <div class="pricing-grid">
+
+      <div class="pricing-card">
+        <h3 class="pricing-name">단일 특강</h3>
+        <div class="pricing-price">
+          <span class="price-amount">100만원~</span>
+          <span class="price-unit">/ 회</span>
+        </div>
+        <p class="pricing-desc">1~3시간의 단독 특강·세미나. 주제별 맞춤 강의안 포함.</p>
+        <ul class="pricing-features" role="list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>강의안 맞춤 제작</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>실습 자료 제공</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>강의 후 Q&amp;A</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline btn--full">상담 신청</a>
+      </div>
+
+      <div class="pricing-card pricing-card--featured">
+        <div class="pricing-badge">가장 인기</div>
+        <h3 class="pricing-name">정기 프로그램</h3>
+        <div class="pricing-price">
+          <span class="price-amount">300만원~</span>
+          <span class="price-unit">/ 월</span>
+        </div>
+        <p class="pricing-desc">월 2~4회 정기 교육 운영. AI 교육, 독서 모임 등 지속 성장.</p>
+        <ul class="pricing-features" role="list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>월 2~4회 정기 운영</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>커리큘럼 전체 설계</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>참여자 학습 관리</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>월간 리포트 제공</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary btn--full">상담 신청</a>
+      </div>
+
+      <div class="pricing-card">
+        <h3 class="pricing-name">HRD 컨설팅</h3>
+        <div class="pricing-price">
+          <span class="price-amount">별도 협의</span>
+        </div>
+        <p class="pricing-desc">교육 체계 수립부터 강사 양성까지 종합 HRD 컨설팅.</p>
+        <ul class="pricing-features" role="list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>조직 교육 체계 진단</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>맞춤 HRD 전략 수립</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>사내 강사 코칭</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>장기 파트너십</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline btn--full">상담 신청</a>
+      </div>
+
+    </div>
+    <p class="pricing-note">* 모든 가격은 참여 인원, 횟수, 내용에 따라 달라집니다. 먼저 무료로 상담해 드립니다.</p>
+  </div>
+</section>
+
+<!-- ─────────────────── CONTACT ─────────────────── -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Contact</span>
+      <h2 class="section-title">문의하기</h2>
+      <p class="section-desc">무료 상담 신청 및 교육 문의를 남겨주세요. 1~2 영업일 내 연락드립니다.</p>
+    </div>
+    <div class="contact-wrapper">
+
+      <!-- 폼 -->
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name" class="form-label">이름 <span class="required">*</span></label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="홍길동" required autocomplete="name" />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="org" class="form-label">소속 기관</label>
+            <input type="text" id="org" name="org" class="form-input" placeholder="회사명 또는 기관명" autocomplete="organization" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email" class="form-label">이메일 <span class="required">*</span></label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com" required autocomplete="email" />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone" class="form-label">연락처</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="010-0000-0000" autocomplete="tel" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="program" class="form-label">관심 프로그램 <span class="required">*</span></label>
+          <select id="program" name="program" class="form-select" required>
+            <option value="" disabled selected>프로그램을 선택해 주세요</option>
+            <option value="ai">챗GPT · AI 활용 교육</option>
+            <option value="leadership">리더십 · 조직 역량개발</option>
+            <option value="reading">독서 · 인문학 강좌</option>
+            <option value="consulting">창업 · HRD 컨설팅</option>
+            <option value="other">기타 / 미정</option>
+          </select>
+          <span class="form-error" id="programError"></span>
+        </div>
+        <div class="form-group">
+          <label for="participants" class="form-label">예상 참여 인원</label>
+          <select id="participants" name="participants" class="form-select">
+            <option value="" disabled selected>인원을 선택해 주세요</option>
+            <option value="1-10">1~10명</option>
+            <option value="11-30">11~30명</option>
+            <option value="31-50">31~50명</option>
+            <option value="50+">50명 이상</option>
+            <option value="unknown">미정</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" class="form-label">문의 내용 <span class="required">*</span></label>
+          <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="교육 목적, 희망 일정, 예산 등을 자유롭게 적어주세요." required></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required />
+          <label for="privacy" class="form-check-label">개인정보 수집 및 이용에 동의합니다. <span class="required">*</span></label>
+          <span class="form-error" id="privacyError"></span>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">
+          <span class="btn-text">문의 보내기</span>
+          <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+        <div class="form-success" id="formSuccess" hidden>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="20 6 9 17 4 12"/></svg>
+          <p>문의가 접수되었습니다. 곧 연락드리겠습니다.</p>
+        </div>
+      </form>
+
+      <!-- 사이드 정보 -->
+      <aside class="contact-info">
+        <div class="contact-info-header">
+          <h3 class="contact-info-title">직접 연락하기</h3>
+          <p class="contact-info-sub">전화 또는 이메일로 바로 문의하세요</p>
+        </div>
+        <div class="contact-info-body">
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 7.09 7.09l1.18-.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div class="contact-item-body">
+              <span class="contact-item-label">전화</span>
+              <a href="tel:010-4810-4973" class="contact-link">010-4810-4973</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-item-body">
+              <span class="contact-item-label">이메일</span>
+              <a href="mailto:joa7338@hanmail.net" class="contact-link">joa7338@hanmail.net</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-item-body">
+              <span class="contact-item-label">주소</span>
+              <span style="font-size:var(--text-sm);color:var(--n-700);">전주시 완산구 홍산로 260, 7층<br />(효자동3가, 엠스퀘어)</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-note-wrap">
+          <div class="contact-note-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            기업·공공기관·지방의회·교육기관·사회복지기관 등 교육 가능
+          </div>
+          <div class="contact-note-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            출강 및 방문 상담 모두 가능합니다
+          </div>
+          <div class="contact-note-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            온라인 · 오프라인 모두 운영합니다
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────────────── FOOTER ─────────────────── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo" aria-label="홈으로">
+        <svg width="30" height="30" viewBox="0 0 36 36" fill="none" aria-hidden="true">
+          <rect width="36" height="36" rx="8" fill="#065f46"/>
+          <path d="M7 10.5C7 10.5 11.5 9.5 18 11.5V26C11.5 24 7 25 7 25Z" fill="none" stroke="white" stroke-width="1.4" stroke-linejoin="round"/>
+          <path d="M29 10.5C29 10.5 24.5 9.5 18 11.5V26C24.5 24 29 25 29 25Z" fill="none" stroke="white" stroke-width="1.4" stroke-linejoin="round"/>
+          <line x1="18" y1="11" x2="18" y2="8" stroke="#34d399" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M18 9.5C16.5 7.5 13.5 8 14.5 10C15.2 11.2 17 10.5 18 9.5Z" fill="#34d399"/>
+          <path d="M18 9.5C19.5 7.5 22.5 8 21.5 10C20.8 11.2 19 10.5 18 9.5Z" fill="#6ee7b7"/>
+        </svg>
+        <span class="logo-text">배움아카데미</span>
+      </a>
+      <p class="footer-tagline">AI 시대, 사람이 중심인 교육을 설계합니다</p>
+    </div>
+    <nav class="footer-nav" aria-label="푸터 메뉴">
+      <a href="#programs">교육 프로그램</a>
+      <a href="#about">강사 소개</a>
+      <a href="#pricing">가격 안내</a>
+      <a href="#contact">문의하기</a>
+    </nav>
+    <p class="footer-copy">© 2026 배움아카데미 · 조석중. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
