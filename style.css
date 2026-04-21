@@ -546,31 +546,76 @@ button { cursor: pointer; background: none; border: none; }
 .pricing-note { text-align: center; margin-top: var(--sp-10); font-size: var(--text-xs); color: var(--color-text-faint); }
 
 /* ══════════════════ TESTIMONIALS ══════════════════ */
-.testimonials-section { background: var(--n-900); }
+.testimonials-section { background: #0f172a; }
 .testimonials-section .section-title { color: var(--white); }
-.testimonials-section .section-desc  { color: rgba(255,255,255,.55); }
+.testimonials-section .section-desc  { color: rgba(255,255,255,.45); }
 .testimonials-section .eyebrow       { color: var(--em-400); }
 .testimonials-section .eyebrow::before { background: var(--em-400); }
-.testimonials-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: var(--sp-5); }
+
+/* 2행 레이아웃 */
+.testimonials-row { display: grid; gap: 16px; margin-bottom: 16px; }
+.testimonials-row--top    { grid-template-columns: 1fr 1fr; }
+.testimonials-row--bottom { grid-template-columns: 1fr 1fr 1fr; margin-bottom: 0; }
+
+/* 카드 */
 .testimonial-card {
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.1);
-  border-radius: var(--r-xl); padding: var(--sp-8);
-  display: flex; flex-direction: column; gap: var(--sp-5);
-  transition: background var(--tr), border-color var(--tr);
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 14px;
+  padding: 24px 26px;
+  display: flex; flex-direction: column; gap: 14px;
+  transition: background .2s, border-color .2s;
 }
-.testimonial-card:hover { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.18); }
-.quote-mark {
-  font-family: var(--font-display); font-size: 3rem;
-  color: var(--em-500); line-height: 1; opacity: .6;
+.testimonial-card:hover {
+  background: rgba(255,255,255,.07);
+  border-color: rgba(52,211,153,.25);
 }
+
+/* 분야 배지 */
+.testimonial-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  color: #34d399;
+  background: rgba(52,211,153,.12);
+  border: 1px solid rgba(52,211,153,.22);
+  border-radius: 20px;
+  padding: 3px 10px;
+  align-self: flex-start;
+}
+
+/* 후기 텍스트 */
 .testimonial-text {
-  font-size: var(--text-sm); color: rgba(255,255,255,.75);
-  line-height: 1.85; font-style: italic; flex: 1; max-width: 100%;
+  font-size: 13.5px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.8;
+  flex: 1;
+  word-break: keep-all;
 }
-.testimonial-author { display: flex; flex-direction: column; gap: 3px; }
-.author-name { font-size: var(--text-sm); font-weight: 600; color: var(--white); }
-.author-role { font-size: var(--text-xs); color: var(--em-400); }
+
+/* 작성자 */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+.author-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--white);
+}
+.author-name::after {
+  content: "·";
+  margin-left: 8px;
+  color: rgba(255,255,255,.3);
+}
+.author-role {
+  font-size: 12px;
+  color: rgba(255,255,255,.45);
+}
 
 /* ══════════════════ CONTACT ══════════════════ */
 .contact-section { background: var(--white); }
@@ -688,7 +733,8 @@ button { cursor: pointer; background: none; border: none; }
   .profile-card { position: static; flex-direction: row; flex-wrap: wrap; text-align: left; }
   .pricing-grid { grid-template-columns: 1fr; gap: var(--sp-4); }
   .pricing-card--featured { transform: none; }
-  .testimonials-grid { grid-template-columns: 1fr; }
+  .testimonials-row--top { grid-template-columns: 1fr; }
+  .testimonials-row--bottom { grid-template-columns: 1fr 1fr; }
   .contact-wrapper { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
   .footer-nav { justify-content: flex-start; }
@@ -703,6 +749,8 @@ button { cursor: pointer; background: none; border: none; }
   .programs-grid { grid-template-columns: 1fr; }
   .trust-bar-inner { gap: var(--sp-5); }
   .trust-divider { display: none; }
+  .testimonials-row--top,
+  .testimonials-row--bottom { grid-template-columns: 1fr; }
 }
 
 /* ══════════════════ CAPABILITY BLOCK (Programs Section) ══════════════════ */
