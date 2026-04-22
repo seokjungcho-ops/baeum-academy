@@ -532,6 +532,7 @@ button { cursor: pointer; background: none; border: none; }
   word-break: keep-all; overflow-wrap: break-word;
 }
 .career-item-text strong { color: var(--n-900); font-weight: 600; }
+.career-item-text--sm { font-size: var(--text-sm); }
 .award-grid {
   display: grid; grid-template-columns: repeat(2,1fr); gap: var(--sp-3);
   padding: var(--sp-5) var(--sp-6);
