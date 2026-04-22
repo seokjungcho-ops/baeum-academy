@@ -7,13 +7,13 @@
 
 :root {
   /* Type Scale */
-  --text-xs:   clamp(0.72rem,  0.68rem + 0.2vw,  0.8rem);
-  --text-sm:   clamp(0.875rem, 0.82rem + 0.28vw, 0.9375rem);
-  --text-base: clamp(1rem,     0.96rem + 0.2vw,  1.0625rem);
-  --text-lg:   clamp(1.125rem, 1rem    + 0.6vw,  1.375rem);
-  --text-xl:   clamp(1.5rem,   1.2rem  + 1.2vw,  2rem);
-  --text-2xl:  clamp(2rem,     1.4rem  + 2vw,    3rem);
-  --text-hero: clamp(2.4rem,   1.5rem  + 3vw,    3.75rem);
+  --text-xs:   clamp(0.8rem,   0.75rem + 0.25vw, 0.9375rem);
+  --text-sm:   clamp(0.9375rem,0.9rem  + 0.3vw,  1.0625rem);
+  --text-base: clamp(1.0625rem,1rem    + 0.35vw, 1.1875rem);
+  --text-lg:   clamp(1.25rem,  1.1rem  + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.625rem, 1.3rem  + 1.4vw,  2.25rem);
+  --text-2xl:  clamp(2.125rem, 1.6rem  + 2.2vw,  3.25rem);
+  --text-hero: clamp(2.75rem,  1.8rem  + 3.5vw,  4.25rem);
 
   /* Spacing */
   --sp-1:.25rem; --sp-2:.5rem;  --sp-3:.75rem;
@@ -684,6 +684,7 @@ button { cursor: pointer; background: none; border: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-5);
   margin-top: var(--sp-10);
+  align-items: start; /* 카드가 서로 다른 높이에 맞춰 늘어나지 않도록 */
 }
 /* 통일 카드 */
 .ref-card {
@@ -692,6 +693,9 @@ button { cursor: pointer; background: none; border: none; }
   border-radius: var(--r-xl);
   padding: var(--sp-7) var(--sp-6);
   transition: box-shadow var(--tr), border-color var(--tr), transform var(--tr);
+  /* 내용 길이에 맞게 높이 자동 확장 */
+  height: auto;
+  overflow: visible;
 }
 .ref-card:hover {
   box-shadow: var(--sh-md);
@@ -723,9 +727,10 @@ button { cursor: pointer; background: none; border: none; }
   gap: var(--sp-3); padding: 0; margin: 0;
 }
 .ref-list li {
-  font-size: var(--text-base); color: var(--n-700);
+  font-size: var(--text-sm); color: var(--n-700);
   padding-left: var(--sp-5); position: relative;
-  line-height: 1.65; word-break: keep-all; overflow-wrap: break-word;
+  line-height: 1.7; word-break: keep-all; overflow-wrap: break-word;
+  min-width: 0;
 }
 .ref-list li::before {
   content: ''; position: absolute; left: 0; top: 10px;
