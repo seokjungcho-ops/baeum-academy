@@ -508,15 +508,15 @@ button { cursor: pointer; background: none; border: none; }
 .career-block-header {
   display: flex; align-items: center; gap: var(--sp-3);
   padding: var(--sp-4) var(--sp-6);
-  background: linear-gradient(90deg, var(--n-50) 0%, var(--white) 100%);
-  border-bottom: 1px solid var(--n-100);
+  background: linear-gradient(90deg, var(--em-100) 0%, var(--em-50) 100%);
+  border-bottom: 1px solid var(--em-200);
 }
 .career-block-icon {
   width: 32px; height: 32px; border-radius: var(--r-md);
-  background: var(--em-50); color: var(--em-700);
+  background: var(--em-200); color: var(--em-800);
   display: flex; align-items: center; justify-content: center; flex-shrink: 0;
 }
-.career-block-title { font-size: var(--text-sm); font-weight: 700; color: var(--n-800); }
+.career-block-title { font-size: var(--text-sm); font-weight: 700; color: var(--em-900); letter-spacing: .01em; }
 .career-list { display: flex; flex-direction: column; }
 .career-item {
   display: flex; align-items: flex-start; gap: var(--sp-4);
@@ -542,7 +542,7 @@ button { cursor: pointer; background: none; border: none; }
 }
 .award-item {
   display: flex; align-items: flex-start; gap: var(--sp-3);
-  background: var(--white); border: 1px solid var(--divider);
+  background: var(--em-50); border: 1px solid var(--em-100);
   border-radius: var(--r-lg); padding: var(--sp-4);
 }
 .award-icon { flex-shrink: 0; color: var(--em-600); margin-top: 1px; }
