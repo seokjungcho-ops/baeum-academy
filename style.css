@@ -482,11 +482,14 @@ button { cursor: pointer; background: none; border: none; }
 .profile-contact-item a { color: var(--em-800); font-weight: 600; transition: color var(--tr); overflow-wrap: anywhere; font-size: var(--text-xs); }
 .profile-contact-item a:hover { color: var(--em-600); }
 /* profile-contact-emails 제거 (단일 이메일) */
-.profile-tags { display: flex; flex-wrap: wrap; gap: var(--sp-2); justify-content: center; }
+.profile-tags { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2); justify-items: center; }
 .profile-tag {
   background: var(--em-50); color: var(--em-800);
   border: 1px solid var(--em-200);
-  font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: var(--r-full);
+  font-size: var(--text-xs); font-weight: 600;
+  padding: 6px 12px; border-radius: var(--r-full);
+  width: 100%; text-align: center;
+  display: flex; align-items: center; justify-content: center;
 }
 
 /* About content */
@@ -890,7 +893,7 @@ button { cursor: pointer; background: none; border: none; }
   /* About */
   .about-inner { grid-template-columns: 1fr; }
   .profile-card { position: static; flex-direction: row; flex-wrap: wrap; text-align: left; }
-  .profile-tags { justify-content: flex-start; }
+  .profile-tags { grid-template-columns: 1fr 1fr; }
 
   /* Network */
   .network-block { padding: var(--sp-8); }
@@ -948,7 +951,7 @@ button { cursor: pointer; background: none; border: none; }
   /* About */
   .about-inner { grid-template-columns: 1fr; }
   .profile-card { padding: var(--sp-6); text-align: center; }
-  .profile-tags { justify-content: center; }
+  .profile-tags { grid-template-columns: 1fr 1fr; }
   .career-item { padding: var(--sp-3) var(--sp-4); }
   .award-grid { grid-template-columns: 1fr; }
 
