@@ -680,38 +680,29 @@ button { cursor: pointer; background: none; border: none; }
 /* 배경: 화이트 */
 .references-section { background: var(--white); }
 .ref-grid {
-  /* CSS Grid — align-items:start 로 각 행에서 카드가 내용 높이만큼만 */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-5);
   margin-top: var(--sp-10);
-  align-items: start; /* 핵심: 카드가 행 높이에 맞춰 늘어나지 않음 */
 }
 /* 통일 카드 */
 .ref-card {
-  /* 높이는 오직 내용에 의해서만 결정 */
-  align-self: start;  /* 개별 카드에도 명시 — 이중 보장 */
+  align-self: start;
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: var(--r-xl);
   padding: var(--sp-7) var(--sp-6);
   transition: box-shadow var(--tr), border-color var(--tr), transform var(--tr);
-  box-sizing: border-box;
-  /* height, min-height, max-height 일체 없음 — 내용이 곧 높이 */
 }
 .ref-card:hover {
   box-shadow: var(--sh-md);
   border-color: var(--em-200);
   transform: translateY(-2px);
 }
-.ref-card--wide {
-  grid-column: span 2; /* 3열 그리드에서 2열 차지 */
-}
 
 .ref-card--accent {
   border-color: var(--em-200);
   background: linear-gradient(145deg, var(--em-50) 0%, var(--white) 60%);
-  grid-column: 2 / span 2; /* AI 특화 교육: 오른쪽 2열 */
 }
 .ref-card-header {
   display: flex; align-items: center; gap: var(--sp-3);
@@ -733,12 +724,7 @@ button { cursor: pointer; background: none; border: none; }
   list-style: none; display: flex; flex-direction: column;
   gap: var(--sp-3); padding: 0; margin: 0;
 }
-/* 2컬럼 리스트 — 국가공공기관 등 항목 많은 카드 */
-.ref-list.ref-list--cols {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-3) var(--sp-6);
-}
+
 .ref-list li {
   font-size: var(--text-sm); color: var(--n-700);
   padding-left: var(--sp-5); position: relative;
@@ -880,7 +866,6 @@ button { cursor: pointer; background: none; border: none; }
 
   /* References — 태블릿: 2열 */
   .ref-grid { grid-template-columns: repeat(2, 1fr); }
-  .ref-card--wide { grid-column: span 2; } /* 태블릿에서도 wide 유지 */
 
   /* Contact */
   .contact-wrapper { grid-template-columns: 1fr; }
@@ -950,9 +935,7 @@ button { cursor: pointer; background: none; border: none; }
 
   /* References — 모바일: 1열 */
   .ref-grid { grid-template-columns: 1fr; }
-  .ref-card--wide { grid-column: span 1; } /* 모바일: 1열로 리셋 */
-  .ref-card--accent { grid-column: span 1; } /* 모바일: accent도 1열 */
-  .ref-list--cols { grid-template-columns: 1fr; } /* 모바일: 단일 컬럼 */
+  .ref-list--cols { grid-template-columns: 1fr; }
 
   /* Contact */
   .form-row { grid-template-columns: 1fr; }
