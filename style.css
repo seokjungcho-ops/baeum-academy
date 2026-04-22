@@ -994,7 +994,9 @@ button { cursor: pointer; background: none; border: none; }
   .profile-card { padding: var(--sp-6); text-align: center; }
   .profile-tags { grid-template-columns: 1fr 1fr; }
   .career-item { padding: var(--sp-3) var(--sp-4); }
-  .award-grid { grid-template-columns: 1fr; }
+  .award-grid { grid-template-columns: repeat(3, 1fr); gap: var(--sp-2); }
+  .award-item { padding: var(--sp-3); gap: var(--sp-2); }
+  .award-text { font-size: 12px; }
 
   /* Network */
   .network-section { padding-block: var(--sp-8); }
