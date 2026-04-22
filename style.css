@@ -310,7 +310,7 @@ button { cursor: pointer; background: none; border: none; }
 }
 .trust-item {
   display: flex; align-items: center; gap: var(--sp-3);
-  font-size: var(--text-xs); font-weight: 500;
+  font-size: var(--text-sm); font-weight: 500;
   color: var(--text-inv-muted); white-space: nowrap;
 }
 .trust-item svg { color: var(--accent); flex-shrink: 0; }
