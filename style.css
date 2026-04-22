@@ -715,17 +715,18 @@ button { cursor: pointer; background: none; border: none; }
   grid-template-columns: repeat(3, 1fr);
   gap: var(--sp-6);
   margin-top: var(--sp-10);
+  align-items: stretch;
 }
 
 /* 카드 — 클린 박스 */
 .ref-card {
-  align-self: start;
   background: var(--white);
   border: 1px solid var(--n-200);
   border-radius: var(--r-lg);
   padding: var(--sp-6) var(--sp-7);
   transition: box-shadow var(--tr), transform var(--tr);
   box-shadow: 0 1px 4px rgba(0,0,0,.04), 0 1px 2px rgba(0,0,0,.03);
+  display: flex; flex-direction: column;
 }
 .ref-card:hover {
   box-shadow: 0 8px 28px rgba(6,95,70,.12), 0 2px 8px rgba(0,0,0,.06);
@@ -739,7 +740,7 @@ button { cursor: pointer; background: none; border: none; }
 
 /* 카드 헤더 */
 .ref-card-header {
-  display: flex; align-items: center; gap: var(--sp-3);
+  display: flex; align-items: center; justify-content: center; gap: var(--sp-3);
   margin-bottom: var(--sp-5);
   padding-bottom: var(--sp-4);
   border-bottom: 1px solid var(--em-100);
@@ -759,20 +760,17 @@ button { cursor: pointer; background: none; border: none; }
   letter-spacing: -0.01em;
 }
 
-/* 리스트 — flex 방식 (테두리 겹침 원천 차단) */
+/* 리스트 — 중앙 정렬, 안정감 */
 .ref-list {
   list-style: none;
   display: flex; flex-direction: column;
-  gap: var(--sp-3); padding: 0; margin: 0;
+  gap: var(--sp-3); padding: var(--sp-2) 0; margin: 0;
+  flex: 1;
 }
 .ref-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 0;
-  padding-left: 0;
   font-size: var(--text-sm); color: var(--n-700);
   line-height: 1.7; word-break: keep-all; overflow-wrap: break-word;
-  min-width: 0;
+  text-align: center; padding: var(--sp-1) var(--sp-2);
 }
 .ref-list li::before { display: none; }
 
@@ -852,7 +850,7 @@ button { cursor: pointer; background: none; border: none; }
 .contact-link { color: var(--em-800); font-weight: 600; transition: color var(--tr); }
 .contact-link:hover { color: var(--em-600); }
 .contact-note-wrap { padding: var(--sp-7) var(--sp-8); border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: var(--sp-4); }
-.contact-note-item { display: flex; align-items: flex-start; gap: var(--sp-4); font-size: var(--text-base); color: var(--em-800); font-weight: 600; line-height: 1.75; }
+.contact-note-item { font-size: var(--text-sm); color: var(--em-800); font-weight: 600; line-height: 1.75; text-align: center; word-break: keep-all; }
 .contact-note-item svg { flex-shrink: 0; color: var(--em-600); margin-top: 4px; min-width: 18px; }
 
 /* ══ FOOTER ══ */
