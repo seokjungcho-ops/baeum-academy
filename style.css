@@ -727,14 +727,21 @@ button { cursor: pointer; background: none; border: none; }
 
 .ref-list li {
   font-size: var(--text-sm); color: var(--n-700);
-  padding-left: var(--sp-8); position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65em;
+  padding-left: 0;
   line-height: 1.75; word-break: keep-all; overflow-wrap: break-word;
   min-width: 0;
 }
 .ref-list li::before {
-  content: ''; position: absolute; left: var(--sp-3); top: 11px;
-  width: 7px; height: 7px; border-radius: 50%;
+  content: '';
+  display: block;
+  flex-shrink: 0;
+  width: 7px; height: 7px;
+  border-radius: 50%;
   background: var(--em-500);
+  margin-top: 0.55em;
 }
 .ref-sub {
   display: block; font-size: var(--text-xs); color: var(--n-500);
@@ -810,8 +817,8 @@ button { cursor: pointer; background: none; border: none; }
 .contact-link { color: var(--em-800); font-weight: 600; transition: color var(--tr); }
 .contact-link:hover { color: var(--em-600); }
 .contact-note-wrap { padding: var(--sp-7) var(--sp-8); border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: var(--sp-4); }
-.contact-note-item { display: flex; align-items: flex-start; gap: var(--sp-3); font-size: var(--text-base); color: var(--em-800); font-weight: 600; line-height: 1.75; }
-.contact-note-item svg { flex-shrink: 0; color: var(--em-600); margin-top: 3px; }
+.contact-note-item { display: flex; align-items: flex-start; gap: var(--sp-4); font-size: var(--text-base); color: var(--em-800); font-weight: 600; line-height: 1.75; }
+.contact-note-item svg { flex-shrink: 0; color: var(--em-600); margin-top: 4px; min-width: 18px; }
 
 /* ══ FOOTER ══ */
 /* 배경: 최어두운 네이비 */
