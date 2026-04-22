@@ -190,7 +190,7 @@ button { cursor: pointer; background: none; border: none; }
 }
 .nav { display: flex; align-items: center; gap: var(--sp-1); margin-left: auto; }
 .nav-link {
-  font-size: 14px; font-weight: 500; color: var(--text-secondary);
+  font-size: 16px; font-weight: 600; color: var(--text-secondary);
   padding: var(--sp-2) var(--sp-3); border-radius: var(--r-sm);
   transition: color var(--tr), background var(--tr);
 }
