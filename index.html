@@ -16,7 +16,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;600&family=Noto+Sans+Mongolian&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -39,33 +39,24 @@
         <!-- 새싹 오른 잎 -->
         <path d="M18 9.5C19.5 7.5 22.5 8 21.5 10C20.8 11.2 19 10.5 18 9.5Z" fill="#6ee7b7"/>
       </svg>
-      <span class="logo-text" data-i18n="000">배움아카데미</span>
+      <span class="logo-text">배움아카데미</span>
     </a>
 
     <nav class="nav" aria-label="주요 메뉴">
-      <a href="#programs" class="nav-link" data-i18n="001">교육 프로그램</a>
-      <a href="#about"    class="nav-link" data-i18n="002">대표강사 소개</a>
-      <a href="#references"  class="nav-link" data-i18n="003">교육 진행 기관</a>
-      <a href="#contact"  class="nav-link nav-link--cta" data-i18n="004">교육 문의</a>
-
-    <div class="lang-switcher" id="langSwitcher">
-      <button class="lang-btn lang-btn--active" data-lang="ko">한국어</button>
-      <button class="lang-btn" data-lang="en">EN</button>
-      <button class="lang-btn" data-lang="zh">中文</button>
-      <button class="lang-btn" data-lang="vi">Viet</button>
-      <button class="lang-btn" data-lang="mn">Монгол</button>
-      <button class="lang-btn" data-lang="si">සිං</button>
-    </div>
+      <a href="#programs" class="nav-link">교육 프로그램</a>
+      <a href="#about"    class="nav-link">대표강사 소개</a>
+      <a href="#references"  class="nav-link">교육 진행 기관</a>
+      <a href="#contact"  class="nav-link nav-link--cta">교육 문의</a>
     </nav>
     <button class="mobile-menu-toggle" aria-label="메뉴 열기" id="menuToggle">
       <span></span><span></span><span></span>
     </button>
   </div>
   <div class="mobile-nav" id="mobileNav">
-    <a href="#programs" class="mobile-nav-link" data-i18n="001">교육 프로그램</a>
-    <a href="#about"    class="mobile-nav-link" data-i18n="002">대표강사 소개</a>
-    <a href="#references"  class="mobile-nav-link" data-i18n="003">교육 진행 기관</a>
-    <a href="#contact"  class="mobile-nav-link mobile-nav-link--cta" data-i18n="004">교육 문의</a>
+    <a href="#programs" class="mobile-nav-link">교육 프로그램</a>
+    <a href="#about"    class="mobile-nav-link">대표강사 소개</a>
+    <a href="#references"  class="mobile-nav-link">교육 진행 기관</a>
+    <a href="#contact"  class="mobile-nav-link mobile-nav-link--cta">교육 문의</a>
   </div>
 </header>
 
@@ -86,40 +77,42 @@
         교육을 설계합니다
       </h1>
       <p class="hero-desc">
-        <span data-i18n="007">22년간 공공기관·기업·대학이 선택한 교육기관. 챗GPT·AI 역량부터 리더십·조직개발까지, 현장에서 검증된 교육을 기획하고 운영합니다.</span>
+        22년간 공공기관·기업·대학이 선택한 교육기관.<br />
+        챗GPT·AI 역량부터 리더십·조직개발까지,<br />
+        현장에서 검증된 교육을 기획하고 운영합니다.
       </p>
       <div class="hero-ctas">
         <a href="#contact" class="btn btn--primary btn--lg">
           교육 문의
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
-        <a href="#programs" class="btn btn--ghost btn--lg" data-i18n="008">프로그램 보기</a>
+        <a href="#programs" class="btn btn--ghost btn--lg">프로그램 보기</a>
       </div>
 
       <!-- 카카오 버튼 -->
       <div class="hero-kakao">
         <a href="http://pf.kakao.com/_TERxgn" target="_blank" rel="noopener" class="btn-kakao btn-kakao--channel">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.477 3 2 6.477 2 10.8c0 2.7 1.6 5.08 4.03 6.5L5 21l4.5-2.4c.82.18 1.67.27 2.5.27 5.523 0 10-3.477 10-7.8S17.523 3 12 3z"/></svg>
-          <span data-i18n="009">카카오채널 추가</span>
+          카카오채널 추가
         </a>
         <a href="http://pf.kakao.com/_TERxgn/chat" target="_blank" rel="noopener" class="btn-kakao btn-kakao--chat">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.477 3 2 6.477 2 10.8c0 2.7 1.6 5.08 4.03 6.5L5 21l4.5-2.4c.82.18 1.67.27 2.5.27 5.523 0 10-3.477 10-7.8S17.523 3 12 3z"/></svg>
-          <span data-i18n="010">카카오톡 채팅하기</span>
+          카카오톡 채팅하기
         </a>
       </div>
     </div>
 
     <!-- 오른쪽: 통계 카드 패널 -->
     <div class="hero-panel">
-      <p class="hero-panel-title" data-i18n="011">주요 이력</p>
+      <p class="hero-panel-title">주요 이력</p>
       <div class="stat-row">
         <div class="stat-item">
           <div class="stat-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <div class="stat-body">
-            <span class="stat-num" data-i18n="012">22년+</span>
-            <span class="stat-label" data-i18n="013">강의 &amp; 컨설팅 경력</span>
+            <span class="stat-num">22년+</span>
+            <span class="stat-label">강의 &amp; 컨설팅 경력</span>
           </div>
         </div>
         <div class="stat-item">
@@ -127,8 +120,8 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
           </div>
           <div class="stat-body">
-            <span class="stat-num" data-i18n="014">350H+</span>
-            <span class="stat-label" data-i18n="015">AI 강의 및 워크숍<br>2023~현재, 공공·기업 중심</span>
+            <span class="stat-num">350H+</span>
+            <span class="stat-label">AI 강의 및 워크숍<br>2023~현재, 공공·기업 중심</span>
           </div>
         </div>
         <div class="stat-item">
@@ -136,8 +129,8 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           </div>
           <div class="stat-body">
-            <span class="stat-num" data-i18n="016">4권</span>
-            <span class="stat-label" data-i18n="017">저서 출간 (1권 출간 예정)</span>
+            <span class="stat-num">4권</span>
+            <span class="stat-label">저서 출간 (1권 출간 예정)</span>
           </div>
         </div>
         <div class="stat-item">
@@ -145,8 +138,8 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <div class="stat-body">
-            <span class="stat-num" data-i18n="018">공공·기업</span>
-            <span class="stat-label" data-i18n="019">지방의회·경찰청·대학 등</span>
+            <span class="stat-num">공공·기업</span>
+            <span class="stat-label">지방의회·경찰청·대학 등</span>
           </div>
         </div>
       </div>
@@ -196,8 +189,8 @@
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">Education Programs</span>
-      <h2 class="section-title" data-i18n="020">교육 프로그램</h2>
-      <p class="section-desc" data-i18n="021">기획부터 운영까지 원스톱. 기관과 조직의 상황에 맞게 설계하는 맞춤형 전문 교육입니다.</p>
+      <h2 class="section-title">교육 프로그램</h2>
+      <p class="section-desc">기획부터 운영까지 원스톱. 기관과 조직의 상황에 맞게 설계하는 맞춤형 전문 교육입니다.</p>
     </div>
     <div class="programs-grid">
 
@@ -205,109 +198,109 @@
         <div class="program-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
         </div>
-        <span class="program-tag" data-i18n="022">핵심 과정</span>
-        <h3 class="program-title" data-i18n="023">챗GPT · AI 활용 교육</h3>
-        <p class="program-desc" data-i18n="024">기초 셋팅부터 실무 적용까지. 보고서·보도자료·민원해결·업무기획 등 실질적인 AI 활용 역량을 기릅니다. 공공기관·기업·지방의회 맞춤 커리큘럼 제공.</p>
+        <span class="program-tag">핵심 과정</span>
+        <h3 class="program-title">챗GPT · AI 활용 교육</h3>
+        <p class="program-desc">기초 셋팅부터 실무 적용까지. 보고서·보도자료·민원해결·업무기획 등 실질적인 AI 활용 역량을 기릅니다. 공공기관·기업·지방의회 맞춤 커리큘럼 제공.</p>
         <ul class="program-features" role="list">
-          <li data-i18n="025">챗GPT 기초 설정 및 실무 활용법</li>
-          <li data-i18n="026">AI 보고서·제안서·기획서 작성</li>
-          <li data-i18n="027">노트북LM·퍼플렉시티 활용 생산성 향상</li>
+          <li>챗GPT 기초 설정 및 실무 활용법</li>
+          <li>AI 보고서·제안서·기획서 작성</li>
+          <li>노트북LM·퍼플렉시티 활용 생산성 향상</li>
         </ul>
         <div class="program-meta">
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg data-i18n="028">3H · 6H · 1일 과정</span>
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg data-i18n="029">10~100명</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>3H · 6H · 1일 과정</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>10~100명</span>
         </div>
-        <a href="#contact" class="btn btn--primary btn--sm" data-i18n="030">문의하기</a>
+        <a href="#contact" class="btn btn--primary btn--sm">문의하기</a>
       </article>
 
       <article class="program-card">
         <div class="program-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         </div>
-        <h3 class="program-title" data-i18n="031">리더십 · 조직 역량개발</h3>
-        <p class="program-desc" data-i18n="032">미국 데일카네기 공인강사 자격 보유. 기업·공공기관 임직원 대상 리더십, 생산성, 팀빌딩 워크숍을 기획·운영합니다.</p>
+        <h3 class="program-title">리더십 · 조직 역량개발</h3>
+        <p class="program-desc">미국 데일카네기 공인강사 자격 보유. 기업·공공기관 임직원 대상 리더십, 생산성, 팀빌딩 워크숍을 기획·운영합니다.</p>
         <ul class="program-features" role="list">
-          <li data-i18n="033">임직원 리더십 개발 과정</li>
-          <li data-i18n="034">팀빌딩 &amp; 소통 워크숍</li>
-          <li data-i18n="035">변화관리 &amp; 조직문화 개선</li>
+          <li>임직원 리더십 개발 과정</li>
+          <li>팀빌딩 &amp; 소통 워크숍</li>
+          <li>변화관리 &amp; 조직문화 개선</li>
         </ul>
         <div class="program-meta">
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg data-i18n="036">반일 / 1일 / 2일 과정</span>
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg data-i18n="037">15~50명</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>반일 / 1일 / 2일 과정</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>15~50명</span>
         </div>
-        <a href="#contact" class="btn btn--primary btn--sm" data-i18n="030">문의하기</a>
+        <a href="#contact" class="btn btn--primary btn--sm">문의하기</a>
       </article>
 
       <article class="program-card">
         <div class="program-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
         </div>
-        <h3 class="program-title" data-i18n="038">독서 · 인문학 강좌</h3>
-        <p class="program-desc" data-i18n="039">전북도민일보 &lt;조석중의 북트렌드&gt; 칼럼니스트로 활동 중. 책과 인문학적 사유를 통해 조직 문화와 개인 성장을 함께 성찰합니다.</p>
+        <h3 class="program-title">독서 · 인문학 강좌</h3>
+        <p class="program-desc">전북도민일보 &lt;조석중의 북트렌드&gt; 칼럼니스트로 활동 중. 책과 인문학적 사유를 통해 조직 문화와 개인 성장을 함께 성찰합니다.</p>
         <ul class="program-features" role="list">
-          <li data-i18n="040">직장인 독서 토론 모임</li>
-          <li data-i18n="041">인문학 기반 리더십 특강</li>
-          <li data-i18n="042">기관 북클럽 운영 컨설팅</li>
+          <li>직장인 독서 토론 모임</li>
+          <li>인문학 기반 리더십 특강</li>
+          <li>기관 북클럽 운영 컨설팅</li>
         </ul>
         <div class="program-meta">
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg data-i18n="043">2H ~ 정기 운영</span>
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg data-i18n="044">5~20명</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2H ~ 정기 운영</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>5~20명</span>
         </div>
-        <a href="#contact" class="btn btn--primary btn--sm" data-i18n="030">문의하기</a>
+        <a href="#contact" class="btn btn--primary btn--sm">문의하기</a>
       </article>
 
       <article class="program-card">
         <div class="program-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
         </div>
-        <h3 class="program-title" data-i18n="045">캠프 &amp; 부트캠프</h3>
-        <p class="program-desc" data-i18n="046">리더십캠프·진로캠프부터 AI 역량강화캠프·취업역량부트캠프까지. 중·고등학교, 대학교, 청년을 대상으로 1일·2일·맞춤 기획 운영합니다.</p>
+        <h3 class="program-title">캠프 &amp; 부트캠프</h3>
+        <p class="program-desc">리더십캠프·진로캠프부터 AI 역량강화캠프·취업역량부트캠프까지. 중·고등학교, 대학교, 청년을 대상으로 1일·2일·맞춤 기획 운영합니다.</p>
         <ul class="program-features" role="list">
-          <li data-i18n="047">리더십캠프 · 진로캠프 · 학습캠프</li>
-          <li data-i18n="048">AI 역량강화캠프 · 취업역량부트캠프</li>
-          <li data-i18n="049">중·고등학교 / 대학교 / 청년 대상</li>
+          <li>리더십캠프 · 진로캠프 · 학습캠프</li>
+          <li>AI 역량강화캠프 · 취업역량부트캠프</li>
+          <li>중·고등학교 / 대학교 / 청년 대상</li>
         </ul>
         <div class="program-meta">
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg data-i18n="050">1일 / 2일 / 맞춤 기획</span>
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg data-i18n="051">별도 상담</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>1일 / 2일 / 맞춤 기획</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>별도 상담</span>
         </div>
-        <a href="#contact" class="btn btn--primary btn--sm" data-i18n="030">문의하기</a>
+        <a href="#contact" class="btn btn--primary btn--sm">문의하기</a>
       </article>
 
       <article class="program-card">
         <div class="program-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
         </div>
-        <h3 class="program-title" data-i18n="052">창업 · HRD 컨설팅</h3>
-        <p class="program-desc" data-i18n="053">예비창업캠퍼스·도약기업 컨설팅 경험을 바탕으로 창업 역량 강화부터 조직 교육 체계 수립까지 맞춤형 솔루션을 제공합니다.</p>
+        <h3 class="program-title">창업 · HRD 컨설팅</h3>
+        <p class="program-desc">예비창업캠퍼스·도약기업 컨설팅 경험을 바탕으로 창업 역량 강화부터 조직 교육 체계 수립까지 맞춤형 솔루션을 제공합니다.</p>
         <ul class="program-features" role="list">
-          <li data-i18n="054">예비창업자 역량강화 과정</li>
-          <li data-i18n="055">중소기업·소상공인 컨설팅</li>
-          <li data-i18n="056">사내 강사 양성 과정</li>
+          <li>예비창업자 역량강화 과정</li>
+          <li>중소기업·소상공인 컨설팅</li>
+          <li>사내 강사 양성 과정</li>
         </ul>
         <div class="program-meta">
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg data-i18n="057">협의 후 결정</span>
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg data-i18n="051">별도 상담</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>협의 후 결정</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>별도 상담</span>
         </div>
-        <a href="#contact" class="btn btn--primary btn--sm" data-i18n="030">문의하기</a>
+        <a href="#contact" class="btn btn--primary btn--sm">문의하기</a>
       </article>
 
       <article class="program-card">
         <div class="program-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/><line x1="4.93" y1="4.93" x2="7.05" y2="7.05"/><line x1="16.95" y1="16.95" x2="19.07" y2="19.07"/><line x1="19.07" y1="4.93" x2="16.95" y2="7.05"/><line x1="7.05" y1="16.95" x2="4.93" y2="19.07"/></svg>
         </div>
-        <h3 class="program-title" data-i18n="058">씽크와이즈 디지털 마인드맵</h3>
-        <p class="program-desc" data-i18n="059">생각을 성과로 연결하는 디지털 마인드맵 전문 툴. 배움아카데미가 씽크와이즈 전주센터를 직접 운영하며 기관·기업·학교에 맞춤 교육을 제공합니다.</p>
+        <h3 class="program-title">씽크와이즈<br>디지털 마인드맵</h3>
+        <p class="program-desc">생각을 성과로 연결하는 디지털 마인드맵 전문 툴. 배움아카데미가 씽크와이즈 전주센터를 직접 운영하며 기관·기업·학교에 맞춤 교육을 제공합니다.</p>
         <ul class="program-features" role="list">
-          <li data-i18n="060">씽크와이즈 전주센터 운영</li>
-          <li data-i18n="061">업무 기획 · 보고서 작성 · 회의 효율화</li>
-          <li data-i18n="062">기관 · 학교 · 기업 맞춤 워크숍</li>
+          <li>씽크와이즈 전주센터 운영</li>
+          <li>업무 기획 · 보고서 작성 · 회의 효율화</li>
+          <li>기관 · 학교 · 기업 맞춤 워크숍</li>
         </ul>
         <div class="program-meta">
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg data-i18n="063">반일 / 1일 과정</span>
-          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg data-i18n="064">10~50명</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>반일 / 1일 과정</span>
+          <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>10~50명</span>
         </div>
-        <a href="#contact" class="btn btn--primary btn--sm" data-i18n="030">문의하기</a>
+        <a href="#contact" class="btn btn--primary btn--sm">문의하기</a>
       </article>
 
     </div>
@@ -318,7 +311,7 @@
           <div class="capability-icon">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           </div>
-          <h3 class="capability-title" data-i18n="065">배움아카데미 교육프로그램 역량</h3>
+          <h3 class="capability-title">배움아카데미 교육프로그램 역량</h3>
         </div>
         <div class="capability-list">
           <div class="capability-item">
@@ -355,8 +348,8 @@
     <aside>
       <div class="profile-card">
         <div>
-          <h3 class="profile-name"><span data-i18n="066">조석중 Lion J</span></h3>
-          <p class="profile-title" data-i18n="068">배움아카데미 대표<br />HRD 컨설턴트 · AI 활용 전문강사</p>
+          <h3 class="profile-name">조석중 <span class="profile-hanja">Lion J 라이언 제이</span></h3>
+          <p class="profile-title">배움아카데미 대표<br />HRD 컨설턴트 · AI 활용 전문강사</p>
         </div>
         <div class="profile-contact">
           <div class="profile-contact-item">
@@ -369,23 +362,23 @@
           </div>
         </div>
         <div class="profile-tags">
-          <span class="profile-tag" data-i18n="071">AI활용전문강사 1급</span>
-          <span class="profile-tag" data-i18n="072">데일카네기 공인강사</span>
-          <span class="profile-tag" data-i18n="073">HRD컨설턴트</span>
-          <span class="profile-tag" data-i18n="074">창업학 석사</span>
-          <span class="profile-tag" data-i18n="075">경제통상학 박사과정</span>
-          <span class="profile-tag" data-i18n="076">ESG컨설턴트</span>
-          <span class="profile-tag" data-i18n="077">씽크와이즈 전주센터장</span>
-          <span class="profile-tag" data-i18n="078">칼럼니스트</span>
+          <span class="profile-tag">AI활용전문강사 1급</span>
+          <span class="profile-tag">데일카네기 공인강사</span>
+          <span class="profile-tag">HRD컨설턴트</span>
+          <span class="profile-tag">창업학 석사</span>
+          <span class="profile-tag">경제통상학 박사과정</span>
+          <span class="profile-tag">ESG컨설턴트</span>
+          <span class="profile-tag">씽크와이즈 전주센터장</span>
+          <span class="profile-tag">칼럼니스트</span>
         </div>
       </div>
     </aside>
 
     <!-- 오른쪽: 상세 경력 -->
     <div class="about-content">
-      <span class="eyebrow" data-i18n="079">About</span>
-      <h2 class="section-title" style="text-align:left;" data-i18n="002">대표강사 소개</h2>
-      <p class="about-lead" data-i18n="080">
+      <span class="eyebrow">About</span>
+      <h2 class="section-title" style="text-align:left;">대표강사 소개</h2>
+      <p class="about-lead">
         인적자원개발(HRD)과 경제통상학을 전공하고, <strong>22년간</strong> 정부부처·지방자치단체·대기업·대학 등에서
         강의와 컨설팅을 진행해 온 현장 전문가입니다.<br><br>
         미국 데일카네기 공인강사(2006~현재), 중앙선거관리위원회 선거연수원 초빙교수,
@@ -402,32 +395,32 @@
             <div class="career-block-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
             </div>
-            <span class="career-block-title" data-i18n="083">주요 경력 (22년)</span>
+            <span class="career-block-title">주요 경력 (22년)</span>
           </div>
           <div class="career-list">
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text" data-i18n="084"><strong>배움아카데미 대표</strong> — AI활용전문강사 1급·2급 민간자격기관 운영</span>
+              <span class="career-item-text"><strong>배움아카데미 대표</strong> — AI활용전문강사 1급·2급 민간자격기관 운영</span>
             </div>
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text" data-i18n="085"><strong>씽크와이즈 전주센터장</strong> — 디지털 마인드맵 전문 교육 센터 운영</span>
+              <span class="career-item-text"><strong>씽크와이즈 전주센터장</strong> — 디지털 마인드맵 전문 교육 센터 운영</span>
             </div>
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text" data-i18n="086"><strong>미국 데일카네기 공인강사</strong> (2006년~현재)<br>기업체·공공기관 리더십 및 생산성 강의</span>
+              <span class="career-item-text"><strong>미국 데일카네기 공인강사</strong> (2006년~현재)<br>기업체·공공기관 리더십 및 생산성 강의</span>
             </div>
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text" data-i18n="087"><strong>전북특별자치도 인재개발원</strong> (2005년~현재)</span>
+              <span class="career-item-text"><strong>전북특별자치도 인재개발원</strong> (2005년~현재)</span>
             </div>
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text" data-i18n="088"><strong>중앙선거관리위원회 선거연수원</strong> 초빙교수</span>
+              <span class="career-item-text"><strong>중앙선거관리위원회 선거연수원</strong> 초빙교수</span>
             </div>
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text" data-i18n="089">㈜하림 팀장교육 · 대유위니아 임직원 워크숍<br>광주과학기술원 · 전북 도약기업 · 예비창업캠퍼스 컨설팅</span>
+              <span class="career-item-text">㈜하림 팀장교육 · 대유위니아 임직원 워크숍<br>광주과학기술원 · 전북 도약기업 · 예비창업캠퍼스 컨설팅</span>
             </div>
           </div>
         </div>
@@ -438,20 +431,20 @@
             <div class="career-block-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
             </div>
-            <span class="career-block-title" data-i18n="090">저서 및 자격</span>
+            <span class="career-block-title">저서 및 자격</span>
           </div>
           <div class="career-list">
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text" data-i18n="091">칼럼니스트 · <strong>전북도민일보 &lt;조석중의 북트렌드&gt;</strong></span>
+              <span class="career-item-text">칼럼니스트 · <strong>전북도민일보<wbr> &lt;조석중의 북트렌드&gt;</strong></span>
             </div>
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text career-item-text--sm" data-i18n="092">《의정활동의 혁신, 챗GPT가 돕는다》(2025) 외 3권 출간<br>《청소년을 위한 AI와 챗GPT 활용법》(2026, 출간예정)</span>
+              <span class="career-item-text career-item-text--sm">《의정활동의 혁신,<wbr> 챗GPT가 돕는다》<wbr> (2025)<wbr> 외 3권 출간<br>《청소년을 위한<wbr> AI와 챗GPT 활용법》<wbr> (2026,<wbr> 출간예정)</span>
             </div>
             <div class="career-item">
               <div class="career-dot"></div>
-              <span class="career-item-text" data-i18n="093">AI활용전문강사 1급 · 마케팅기획전문가<br>ESG컨설턴트 · 창업지도사</span>
+              <span class="career-item-text">AI활용전문강사 1급 · 마케팅기획전문가<br>ESG컨설턴트 · 창업지도사</span>
             </div>
           </div>
         </div>
@@ -462,20 +455,20 @@
             <div class="career-block-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
             </div>
-            <span class="career-block-title" data-i18n="094">수상 내역</span>
+            <span class="career-block-title">수상 내역</span>
           </div>
           <div class="award-grid">
             <div class="award-item">
               <svg class="award-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-              <div class="award-text" data-i18n="095"><strong>문화체육부 장관표창</strong> 2019년</div>
+              <div class="award-text"><strong>문화체육부 장관표창</strong> 2019년</div>
             </div>
             <div class="award-item">
               <svg class="award-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-              <div class="award-text" data-i18n="096"><strong>중앙선관위원장 표창</strong> 2024년</div>
+              <div class="award-text"><strong>중앙선관위원장 표창</strong> 2024년</div>
             </div>
             <div class="award-item">
               <svg class="award-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
-              <div class="award-text" data-i18n="097"><strong>지역혁신대회 아이디어 대상</strong> 전라북도 (2007)</div>
+              <div class="award-text"><strong>지역혁신대회 아이디어 대상</strong> 전라북도 (2007)</div>
             </div>
           </div>
         </div>
@@ -486,20 +479,20 @@
             <div class="career-block-icon">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
             </div>
-            <span class="career-block-title" data-i18n="098">주요 강의 주제 (AI 관련)</span>
+            <span class="career-block-title">주요 강의 주제 (AI 관련)</span>
           </div>
           <div class="lecture-wrap">
             <div class="lecture-chips">
-              <span class="lecture-chip" data-i18n="099">챗GPT 기초 &amp; 활용법</span>
-              <span class="lecture-chip" data-i18n="100">AI 활용 행정사무감사</span>
-              <span class="lecture-chip" data-i18n="101">AI 업무역량 강화</span>
-              <span class="lecture-chip" data-i18n="102">AI 10배 업무 생산성</span>
-              <span class="lecture-chip" data-i18n="103">AI 활용 전문가 과정</span>
-              <span class="lecture-chip" data-i18n="104">보고서·제안서 AI 작성</span>
-              <span class="lecture-chip" data-i18n="105">챗GPT 리서치 기법</span>
-              <span class="lecture-chip" data-i18n="106">창의적 AI 기획</span>
-              <span class="lecture-chip" data-i18n="107">AI 활용 법안기획</span>
-              <span class="lecture-chip" data-i18n="108">데이터 통계 AI 활용</span>
+              <span class="lecture-chip">챗GPT 기초 &amp; 활용법</span>
+              <span class="lecture-chip">AI 활용 행정사무감사</span>
+              <span class="lecture-chip">AI 업무역량 강화</span>
+              <span class="lecture-chip">AI 10배 업무 생산성</span>
+              <span class="lecture-chip">AI 활용 전문가 과정</span>
+              <span class="lecture-chip">보고서·제안서 AI 작성</span>
+              <span class="lecture-chip">챗GPT 리서치 기법</span>
+              <span class="lecture-chip">창의적 AI 기획</span>
+              <span class="lecture-chip">AI 활용 법안기획</span>
+              <span class="lecture-chip">데이터 통계 AI 활용</span>
             </div>
           </div>
         </div>
@@ -518,13 +511,13 @@
       <!-- 상단: eyebrow + 제목 + 뱃지 -->
       <div class="network-head-row">
         <div class="network-left-col">
-          <p class="network-eyebrow" data-i18n="109">Nationwide Instructor Network</p>
-          <h3 class="network-title" data-i18n="110">전국 강사 네트워크</h3>
-          <p class="network-subtitle" data-i18n="111">전국의 분야별 전문강사와 협업하는 배움아카데미는 고객에게 <em class="network-em">최고 수준의 교육 · 프로그램</em>을 제공합니다</p>
+          <p class="network-eyebrow">Nationwide Instructor Network</p>
+          <h3 class="network-title">전국 강사 네트워크</h3>
+          <p class="network-subtitle">전국의 분야별 전문강사와 협업하는 배움아카데미는<br>고객에게 <em class="network-em">최고 수준의 교육 · 프로그램</em>을 제공합니다</p>
         </div>
         <div class="network-stat-badge">
           <span class="network-stat-num">50<span class="network-stat-plus">+</span></span>
-          <span class="network-stat-label" data-i18n="113">전국 협업 전문강사</span>
+          <span class="network-stat-label">전국 협업 전문강사</span>
         </div>
       </div>
       <!-- 구분선 -->
@@ -533,19 +526,19 @@
       <div class="network-tags">
         <span class="network-tag network-tag--gold">
           <span class="network-tag-icon">✦</span>
-          <span data-i18n="114">분야별 전문강사 협업</span>
+          <span>분야별<br>전문강사 협업</span>
         </span>
         <span class="network-tag network-tag--amber">
           <span class="network-tag-icon">◎</span>
-          <span data-i18n="115">기관 · 기업 맞춤 설계</span>
+          <span>기관 · 기업<br>맞춤 설계</span>
         </span>
         <span class="network-tag">
           <span class="network-tag-icon">▸</span>
-          <span data-i18n="116">리더십 · AI · HRD 전 분야 커버</span>
+          <span>리더십 · AI · HRD<br>전 분야 커버</span>
         </span>
         <span class="network-tag">
           <span class="network-tag-icon">◈</span>
-          <span data-i18n="117">현장 검증된 실전 프로그램</span>
+          <span>현장 검증된<br>실전 프로그램</span>
         </span>
       </div>
     </div>
@@ -557,25 +550,25 @@
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">Testimonials</span>
-      <h2 class="section-title" data-i18n="118">수강 후기</h2>
-      <p class="section-desc" data-i18n="119">실제 교육 현장에서 받은 이야기입니다</p>
+      <h2 class="section-title">수강 후기</h2>
+      <p class="section-desc">실제 교육 현장에서 받은 이야기입니다</p>
     </div>
     <!-- 상단 2개 -->
     <div class="testimonials-row testimonials-row--top">
       <blockquote class="testimonial-card">
         <span class="testimonial-badge">AI · 챗GPT</span>
-        <p class="testimonial-text" data-i18n="120">"AI를 단순히 쓰는 게 아니라, 어떻게 생각하며 써야 하는지를 배운 교육이었습니다. 실무에 바로 적용할 수 있어 팀 전체가 만족했습니다."</p>
+        <p class="testimonial-text">"AI를 단순히 쓰는 게 아니라, 어떻게 생각하며 써야 하는지를 배운 교육이었습니다. 실무에 바로 적용할 수 있어 팀 전체가 만족했습니다."</p>
         <footer class="testimonial-author">
           <span class="author-name">이○○</span>
-          <span class="author-role" data-i18n="121">팀장 · 공공기관</span>
+          <span class="author-role">팀장 · 공공기관</span>
         </footer>
       </blockquote>
       <blockquote class="testimonial-card">
         <span class="testimonial-badge">디지털 생산성</span>
-        <p class="testimonial-text" data-i18n="122">"챗GPT 워크숍 이후 보고서 작성 시간이 절반으로 줄었습니다. 현장 중심 교육이라 막힘 없이 따라갈 수 있었습니다."</p>
+        <p class="testimonial-text">"챗GPT 워크숍 이후 보고서 작성 시간이 절반으로 줄었습니다. 현장 중심 교육이라 막힘 없이 따라갈 수 있었습니다."</p>
         <footer class="testimonial-author">
           <span class="author-name">박○○</span>
-          <span class="author-role" data-i18n="123">과장 · 지방자치단체</span>
+          <span class="author-role">과장 · 지방자치단체</span>
         </footer>
       </blockquote>
     </div>
@@ -583,26 +576,26 @@
     <div class="testimonials-row testimonials-row--bottom">
       <blockquote class="testimonial-card">
         <span class="testimonial-badge">리더십</span>
-        <p class="testimonial-text" data-i18n="124">"팀장 리더십 과정에서 실질적인 커뮤니케이션 기술을 익혔습니다. 조직 분위기가 확실히 달라졌어요."</p>
+        <p class="testimonial-text">"팀장 리더십 과정에서 실질적인 커뮤니케이션 기술을 익혔습니다. 조직 분위기가 확실히 달라졌어요."</p>
         <footer class="testimonial-author">
           <span class="author-name">김○○</span>
-          <span class="author-role" data-i18n="125">팀장 · 제조기업</span>
+          <span class="author-role">팀장 · 제조기업</span>
         </footer>
       </blockquote>
       <blockquote class="testimonial-card">
         <span class="testimonial-badge">독서 · 인문학</span>
-        <p class="testimonial-text" data-i18n="126">"독서경영 프로그램이 이렇게 깊이 있을 줄 몰랐습니다. 우리 기관 상황에 딱 맞게 설계되어 매우 만족스러웠습니다."</p>
+        <p class="testimonial-text">"독서경영 프로그램이 이렇게 깊이 있을 줄 몰랐습니다. 우리 기관 상황에 딱 맞게 설계되어 매우 만족스러웠습니다."</p>
         <footer class="testimonial-author">
           <span class="author-name">최○○</span>
-          <span class="author-role" data-i18n="127">교육팀장 · 공공기관</span>
+          <span class="author-role">교육팀장 · 공공기관</span>
         </footer>
       </blockquote>
       <blockquote class="testimonial-card">
         <span class="testimonial-badge">HRD 컨설팅</span>
-        <p class="testimonial-text" data-i18n="128">"교육 설계부터 강의까지 원스톱으로 진행해 주셔서 담당자 입장에서 매우 편리했습니다. 완성도도 높았습니다."</p>
+        <p class="testimonial-text">"교육 설계부터 강의까지 원스톱으로 진행해 주셔서 담당자 입장에서 매우 편리했습니다. 완성도도 높았습니다."</p>
         <footer class="testimonial-author">
           <span class="author-name">정○○</span>
-          <span class="author-role" data-i18n="129">HRD 담당 · 대학교</span>
+          <span class="author-role">HRD 담당 · 대학교</span>
         </footer>
       </blockquote>
     </div>
@@ -614,8 +607,8 @@
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">Client References</span>
-      <h2 class="section-title" data-i18n="003">교육 진행 기관</h2>
-      <p class="section-desc" data-i18n="130">행정안전부·삼성그룹·국립도서관 등 국내 주요 공공기관과 기업이 배움아카데미를 선택했습니다.</p>
+      <h2 class="section-title">교육 진행 기관</h2>
+      <p class="section-desc">행정안전부·삼성그룹·국립도서관 등 국내 주요 공공기관과 기업이 배움아카데미를 선택했습니다.</p>
     </div>
 
     <div class="ref-grid">
@@ -625,18 +618,18 @@
           <div class="ref-card-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
           </div>
-          <h3 class="ref-card-title" data-i18n="131">국가·공공기관</h3>
+          <h3 class="ref-card-title">국가·공공기관</h3>
         </div>
         <ul class="ref-list">
-          <li data-i18n="132">행정안전부</li>
-          <li data-i18n="133">지방자치인재개발원</li>
-          <li data-i18n="134">국세청 · 특허청</li>
-          <li data-i18n="135">환경부 · 전북지방환경청</li>
-          <li data-i18n="136">농촌진흥청 교육연수원</li>
-          <li data-i18n="137">전북 · 충남 인재개발원</li>
-          <li data-i18n="138">중앙선거관리위원회</li>
-          <li data-i18n="139">전북지방경찰청</li>
-          <li data-i18n="140">전북교육청 · 전남교육청</li>
+          <li>행정안전부</li>
+          <li>지방자치인재개발원</li>
+          <li>국세청 · 특허청</li>
+          <li>환경부 · 전북지방환경청</li>
+          <li>농촌진흥청 교육연수원</li>
+          <li>전북 · 충남 인재개발원</li>
+          <li>중앙선거관리위원회</li>
+          <li>전북지방경찰청</li>
+          <li>전북교육청 · 전남교육청</li>
         </ul>
       </div>
 
@@ -645,13 +638,13 @@
           <div class="ref-card-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
           </div>
-          <h3 class="ref-card-title" data-i18n="141">지방자치단체</h3>
+          <h3 class="ref-card-title">지방자치단체</h3>
         </div>
         <ul class="ref-list">
-          <li data-i18n="142">전주시 · 전주시의회</li>
-          <li data-i18n="143">충주시 · 상주시</li>
-          <li data-i18n="144">전북도의회 · 곡성군의회</li>
-          <li data-i18n="145">전라북도청</li>
+          <li>전주시 · 전주시의회</li>
+          <li>충주시 · 상주시</li>
+          <li>전북도의회 · 곡성군의회</li>
+          <li>전라북도청</li>
           <li>김제시 · 익산시 · 목포시</li>
           <li>전주지방법원 군산지원</li>
         </ul>
@@ -662,14 +655,14 @@
           <div class="ref-card-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
           </div>
-          <h3 class="ref-card-title" data-i18n="146">기업체</h3>
+          <h3 class="ref-card-title">기업체</h3>
         </div>
         <ul class="ref-list">
-          <li data-i18n="147">삼성그룹</li>
-          <li data-i18n="148">유한킴벌리</li>
-          <li data-i18n="149">기아자동차 · 현대자동차</li>
-          <li data-i18n="150">㈜하림 · 대유위니아</li>
-          <li data-i18n="151">전북은행</li>
+          <li>삼성그룹</li>
+          <li>유한킴벌리</li>
+          <li>기아자동차 · 현대자동차</li>
+          <li>㈜하림 · 대유위니아</li>
+          <li>전북은행</li>
         </ul>
       </div>
 
@@ -678,15 +671,15 @@
           <div class="ref-card-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           </div>
-          <h3 class="ref-card-title" data-i18n="152">교육·연구기관</h3>
+          <h3 class="ref-card-title">교육·연구기관</h3>
         </div>
         <ul class="ref-list">
-          <li data-i18n="153">전북대학교 산학협력단</li>
-          <li data-i18n="154">광주과학기술원</li>
-          <li data-i18n="155">한국능률협회 충남지역본부</li>
-          <li data-i18n="156">YBM리더십아카데미</li>
-          <li data-i18n="157">데일카네기코리아</li>
-          <li data-i18n="158">서울시 여성능력개발원</li>
+          <li>전북대학교 산학협력단</li>
+          <li>광주과학기술원</li>
+          <li>한국능률협회 충남지역본부</li>
+          <li>YBM리더십아카데미</li>
+          <li>데일카네기코리아</li>
+          <li>서울시 여성능력개발원</li>
         </ul>
       </div>
 
@@ -695,14 +688,14 @@
           <div class="ref-card-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
           </div>
-          <h3 class="ref-card-title" data-i18n="159">문화·도서관</h3>
+          <h3 class="ref-card-title">문화·도서관</h3>
         </div>
         <ul class="ref-list">
-          <li data-i18n="160">국립중앙도서관</li>
-          <li data-i18n="161">국립어린이청소년도서관</li>
-          <li data-i18n="162">경남대표 도서관</li>
-          <li data-i18n="163">관악문화재단</li>
-          <li data-i18n="164">금천문화재단</li>
+          <li>국립중앙도서관</li>
+          <li>국립어린이청소년도서관</li>
+          <li>경남대표 도서관</li>
+          <li>관악문화재단</li>
+          <li>금천문화재단</li>
         </ul>
       </div>
 
@@ -711,14 +704,14 @@
           <div class="ref-card-icon">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
           </div>
-          <h3 class="ref-card-title" data-i18n="165">AI 특화 교육</h3>
+          <h3 class="ref-card-title">AI 특화 교육</h3>
         </div>
         <ul class="ref-list">
-          <li data-i18n="166">전북새로일하기센터 · 전주새일센터</li>
-          <li data-i18n="167">전북여성가족재단</li>
-          <li data-i18n="168">전북대학교 영농창업단</li>
-          <li data-i18n="169">챗GPT · 생성형 AI 프로그램 <span class="ref-sub">(공공기관 · 지자체 등 20여 기관)</span></li>
-          <li data-i18n="170">AI활용전문강사 1급 · 2급 과정 운영</li>
+          <li>전북새로일하기센터 · 전주새일센터</li>
+          <li>전북여성가족재단</li>
+          <li>전북대학교 영농창업단</li>
+          <li>챗GPT · 생성형 AI 프로그램 <span class="ref-sub">(공공기관 · 지자체 등 20여 기관)</span></li>
+          <li>AI활용전문강사 1급 · 2급 과정 운영</li>
         </ul>
       </div>
 
@@ -731,8 +724,8 @@
   <div class="container">
     <div class="section-header">
       <span class="eyebrow">Contact</span>
-      <h2 class="section-title" data-i18n="004">문의하기</h2>
-      <p class="section-desc" data-i18n="171">무료 상담 신청 및 교육 문의를 남겨주세요. 1~2 영업일 내 연락드립니다.</p>
+      <h2 class="section-title">문의하기</h2>
+      <p class="section-desc">무료 상담 신청 및 교육 문의를 남겨주세요. 1~2 영업일 내 연락드립니다.</p>
     </div>
     <div class="contact-wrapper">
 
@@ -744,28 +737,28 @@
         <input type="hidden" name="redirect" value="false" />
         <div class="form-row">
           <div class="form-group">
-            <label for="name" class="form-label"><span data-i18n="172">이름</span> <span class="required">*</span></label>
+            <label for="name" class="form-label">이름 <span class="required">*</span></label>
             <input type="text" id="name" name="name" class="form-input" placeholder="홍길동" required autocomplete="name" />
             <span class="form-error" id="nameError"></span>
           </div>
           <div class="form-group">
-            <label for="org" class="form-label" data-i18n="173">소속 기관</label>
+            <label for="org" class="form-label">소속 기관</label>
             <input type="text" id="org" name="org" class="form-input" placeholder="회사명 또는 기관명" autocomplete="organization" />
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="email" class="form-label"><span data-i18n="174">이메일</span> <span class="required">*</span></label>
+            <label for="email" class="form-label">이메일 <span class="required">*</span></label>
             <input type="email" id="email" name="email" class="form-input" placeholder="example@email.com" required autocomplete="email" />
             <span class="form-error" id="emailError"></span>
           </div>
           <div class="form-group">
-            <label for="phone" class="form-label" data-i18n="175">연락처</label>
+            <label for="phone" class="form-label">연락처</label>
             <input type="tel" id="phone" name="phone" class="form-input" placeholder="010-0000-0000" autocomplete="tel" />
           </div>
         </div>
         <div class="form-group">
-          <label for="program" class="form-label"><span data-i18n="176">관심 프로그램</span> <span class="required">*</span></label>
+          <label for="program" class="form-label">관심 프로그램 <span class="required">*</span></label>
           <select id="program" name="program" class="form-select" required>
             <option value="" disabled selected>프로그램을 선택해 주세요</option>
             <option value="ai">챗GPT · AI 활용 교육</option>
@@ -777,7 +770,7 @@
           <span class="form-error" id="programError"></span>
         </div>
         <div class="form-group">
-          <label for="participants" class="form-label" data-i18n="177">예상 참여 인원</label>
+          <label for="participants" class="form-label">예상 참여 인원</label>
           <select id="participants" name="participants" class="form-select">
             <option value="" disabled selected>인원을 선택해 주세요</option>
             <option value="1-10">1~10명</option>
@@ -788,30 +781,30 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="message" class="form-label"><span data-i18n="178">문의 내용</span> <span class="required">*</span></label>
+          <label for="message" class="form-label">문의 내용 <span class="required">*</span></label>
           <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="교육 목적, 희망 일정, 예산 등을 자유롭게 적어주세요." required></textarea>
           <span class="form-error" id="messageError"></span>
         </div>
         <div class="form-group form-check">
           <input type="checkbox" id="privacy" name="privacy" class="form-checkbox" required />
-          <label for="privacy" class="form-check-label"><span data-i18n="179">개인정보 수집 및 이용에 동의합니다.</span> <span class="required">*</span></label>
+          <label for="privacy" class="form-check-label">개인정보 수집 및 이용에 동의합니다. <span class="required">*</span></label>
           <span class="form-error" id="privacyError"></span>
         </div>
         <button type="submit" class="btn btn--primary btn--lg btn--full" id="submitBtn">
-          <span class="btn-text" data-i18n="180">문의 보내기</span>
+          <span class="btn-text">문의 보내기</span>
           <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </button>
         <div class="form-success" id="formSuccess" hidden>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><polyline points="20 6 9 17 4 12"/></svg>
-          <p data-i18n="181">문의가 접수되었습니다. 곧 연락드리겠습니다.</p>
+          <p>문의가 접수되었습니다. 곧 연락드리겠습니다.</p>
         </div>
       </form>
 
       <!-- 사이드 정보 -->
       <aside class="contact-info">
         <div class="contact-info-header">
-          <h3 class="contact-info-title" data-i18n="182">직접 연락하기</h3>
-          <p class="contact-info-sub" data-i18n="183">전화 또는 이메일로 바로 문의하세요</p>
+          <h3 class="contact-info-title">직접 연락하기</h3>
+          <p class="contact-info-sub">전화 또는 이메일로 바로 문의하세요</p>
         </div>
         <div class="contact-info-body">
           <div class="contact-item">
@@ -819,7 +812,7 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 7.09 7.09l1.18-.87a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </div>
             <div class="contact-item-body">
-              <span class="contact-item-label" data-i18n="184">전화</span>
+              <span class="contact-item-label">전화</span>
               <a href="tel:010-4810-4973" class="contact-link">010-4810-4973</a>
             </div>
           </div>
@@ -828,7 +821,7 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
             </div>
             <div class="contact-item-body">
-              <span class="contact-item-label" data-i18n="185">이메일</span>
+              <span class="contact-item-label">이메일</span>
               <a href="mailto:joa7338@hanmail.net" class="contact-link">joa7338@hanmail.net</a>
             </div>
           </div>
@@ -837,8 +830,8 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div class="contact-item-body">
-              <span class="contact-item-label" data-i18n="186">주소</span>
-              <span style="font-size:var(--text-sm);color:var(--n-700);" data-i18n="187">전주시 완산구 홍산로 260, 7층<br />(효자동3가, 엠스퀘어)</span>
+              <span class="contact-item-label">주소</span>
+              <span style="font-size:var(--text-sm);color:var(--n-700);">전주시 완산구 홍산로 260, 7층<br />(효자동3가, 엠스퀘어)</span>
             </div>
           </div>
         </div>
@@ -868,17 +861,17 @@
           <path d="M18 9.5C16.5 7.5 13.5 8 14.5 10C15.2 11.2 17 10.5 18 9.5Z" fill="#34d399"/>
           <path d="M18 9.5C19.5 7.5 22.5 8 21.5 10C20.8 11.2 19 10.5 18 9.5Z" fill="#6ee7b7"/>
         </svg>
-        <span class="logo-text" data-i18n="000">배움아카데미</span>
+        <span class="logo-text">배움아카데미</span>
       </a>
-      <p class="footer-tagline" data-i18n="188">AI 시대, 사람이 중심인 교육을 설계합니다</p>
+      <p class="footer-tagline">AI 시대, 사람이 중심인 교육을 설계합니다</p>
     </div>
     <nav class="footer-nav" aria-label="푸터 메뉴">
-      <a href="#programs" data-i18n="001">교육 프로그램</a>
-      <a href="#about" data-i18n="002">대표강사 소개</a>
-      <a href="#references" data-i18n="003">교육 진행 기관</a>
-      <a href="#contact" data-i18n="004">문의하기</a>
+      <a href="#programs">교육 프로그램</a>
+      <a href="#about">대표강사 소개</a>
+      <a href="#references">교육 진행 기관</a>
+      <a href="#contact">문의하기</a>
     </nav>
-    <p class="footer-copy" data-i18n="189">© 2026 배움아카데미 · 조석중. All rights reserved.</p>
+    <p class="footer-copy">© 2026 배움아카데미 · 조석중. All rights reserved.</p>
   </div>
 </footer>
 
