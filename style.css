@@ -284,6 +284,35 @@ button { cursor: pointer; background: none; border: none; }
 }
 .hero-ctas { display: flex; gap: var(--sp-3); flex-wrap: wrap; }
 
+/* 카카오 버튼 */
+.hero-kakao {
+  display: flex; gap: var(--sp-3); flex-wrap: wrap;
+  margin-top: var(--sp-4);
+}
+.btn-kakao {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #FEE500; color: #3C1E1E;
+  font-size: var(--text-sm); font-weight: 700;
+  padding: 10px 20px; border-radius: 9999px;
+  border: none; cursor: pointer;
+  transition: background .18s, transform .18s, box-shadow .18s;
+  box-shadow: 0 2px 8px rgba(254,229,0,.35);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.btn-kakao:hover {
+  background: #f5d900;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(254,229,0,.45);
+}
+.btn-kakao svg { flex-shrink: 0; }
+/* 채팅하기 버튼은 약간 투명하게 구분 */
+.btn-kakao--chat {
+  background: rgba(254,229,0,.80);
+  box-shadow: 0 2px 8px rgba(254,229,0,.20);
+}
+.btn-kakao--chat:hover { background: #FEE500; }
+
 /* Hero panel — 통일된 카드 스타일 */
 .hero-panel {
   background: var(--white); border-radius: var(--r-xl);
@@ -975,6 +1004,8 @@ button { cursor: pointer; background: none; border: none; }
   .stat-label { font-size: 11px; }
   .hero-ctas { flex-direction: column; }
   .hero-ctas .btn { width: 100%; justify-content: center; }
+  .hero-kakao { flex-direction: column; }
+  .btn-kakao { width: 100%; justify-content: center; }
 
   /* Trust bar */
   .trust-bar-inner { gap: var(--sp-3); }
