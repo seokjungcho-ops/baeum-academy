@@ -481,7 +481,7 @@ button { cursor: pointer; background: none; border: none; }
 .profile-contact-item svg { flex-shrink: 0; color: var(--em-600); margin-top: 2px; }
 .profile-contact-item a { color: var(--em-800); font-weight: 600; transition: color var(--tr); overflow-wrap: anywhere; font-size: var(--text-xs); }
 .profile-contact-item a:hover { color: var(--em-600); }
-.profile-contact-emails { display: flex; flex-direction: column; gap: 4px; min-width: 0; overflow: hidden; }
+/* profile-contact-emails 제거 (단일 이메일) */
 .profile-tags { display: flex; flex-wrap: wrap; gap: var(--sp-2); justify-content: center; }
 .profile-tag {
   background: var(--em-50); color: var(--em-800);
