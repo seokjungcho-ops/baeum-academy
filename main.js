@@ -214,3 +214,85 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
   targets.forEach(el => observer.observe(el));
 })();
+
+// ========================
+// i18n — 다국어 전환
+// ========================
+(function () {
+  const SUPPORTED = ['ko', 'en', 'zh', 'vi', 'mn', 'si'];
+  let currentLang = 'ko'; // 세션 내 메모리에만 유지 (새로고침 시 한국어로 초기화)
+  let translationCache = {};
+
+  // 저장된 한국어 원문 (최초 1회만)
+  let koTexts = {};
+
+  function saveKoTexts() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (!koTexts[key]) koTexts[key] = el.textContent;
+    });
+  }
+
+  async function loadTranslation(lang) {
+    if (lang === 'ko') return null;
+    if (translationCache[lang]) return translationCache[lang];
+    try {
+      const res = await fetch(`i18n_${lang}.json`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      translationCache[lang] = data;
+      return data;
+    } catch (e) {
+      console.warn(`i18n load failed for ${lang}:`, e);
+      return null;
+    }
+  }
+
+  function applyTranslation(data) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const text = data ? (data[key] || koTexts[key]) : koTexts[key];
+      if (text !== undefined) el.textContent = text;
+    });
+  }
+
+  function updateButtons(lang) {
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.toggle('lang-btn--active', btn.getAttribute('data-lang') === lang);
+    });
+  }
+
+  async function switchLang(lang) {
+    if (!SUPPORTED.includes(lang)) return;
+    currentLang = lang;
+    // 언어 선택은 세션 중 메모리에만 유지
+    updateButtons(lang);
+
+    if (lang === 'ko') {
+      applyTranslation(null);
+    } else {
+      const data = await loadTranslation(lang);
+      applyTranslation(data);
+    }
+  }
+
+  // 초기화
+  document.addEventListener('DOMContentLoaded', async function () {
+    saveKoTexts();
+
+    // 버튼 이벤트
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.getAttribute('data-lang');
+        switchLang(lang);
+      });
+    });
+
+    // 저장된 언어 복원
+    if (currentLang && currentLang !== 'ko') {
+      await switchLang(currentLang);
+    } else {
+      updateButtons('ko');
+    }
+  });
+})();
