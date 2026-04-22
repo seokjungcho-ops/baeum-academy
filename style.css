@@ -413,8 +413,8 @@ button { cursor: pointer; background: none; border: none; }
 }
 .lecture-chip {
   background: var(--white); border: 1px solid var(--border);
-  color: var(--n-700); font-size: 14px; font-weight: 500;
-  padding: 10px 16px; border-radius: var(--r-full);
+  color: var(--n-700); font-size: var(--text-sm); font-weight: 500;
+  padding: 12px 18px; border-radius: var(--r-full);
   text-align: center; word-break: keep-all;
   transition: border-color var(--tr), color var(--tr), background var(--tr);
 }
@@ -499,7 +499,7 @@ button { cursor: pointer; background: none; border: none; }
   background: var(--em-500); flex-shrink: 0; margin-top: 7px;
 }
 .career-item-text {
-  font-size: var(--text-sm); color: var(--n-700); line-height: 1.7;
+  font-size: var(--text-base); color: var(--n-700); line-height: 1.8;
   word-break: keep-all; overflow-wrap: break-word;
 }
 .career-item-text strong { color: var(--n-900); font-weight: 600; }
