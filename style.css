@@ -858,6 +858,7 @@ button { cursor: pointer; background: none; border: none; }
   overflow: hidden;
   box-shadow: 0 8px 40px rgba(0,0,0,.18);
   padding: 36px 40px;
+  grid-column: 1 / -1; /* 2열 그리드 전체 폭 차지 */
 }
 /* 상단: eyebrow + 제목 + 뱃지 한 행 */
 .network-head-row {
@@ -869,7 +870,7 @@ button { cursor: pointer; background: none; border: none; }
 }
 .network-left-col {
   min-width: 0;
-  flex: 1 1 0;
+  flex: 1 1 200px;
 }
 .network-eyebrow {
   font-size: 10px;
@@ -878,7 +879,8 @@ button { cursor: pointer; background: none; border: none; }
   text-transform: uppercase;
   color: #34d399;
   margin-bottom: 8px;
-  white-space: nowrap;
+  word-break: break-all;
+  overflow-wrap: anywhere;
 }
 .network-title {
   font-family: var(--font-serif);
