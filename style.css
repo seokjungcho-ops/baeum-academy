@@ -963,7 +963,11 @@ button { cursor: pointer; background: none; border: none; }
   .program-desc { font-size: var(--text-sm); }
   .about-lead { font-size: var(--text-sm); }
   .hero-panel { display: flex; flex-direction: column; gap: var(--sp-3); }
-  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-3); }
+  .stat-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--sp-2); }
+  .stat-item { padding: var(--sp-3); gap: var(--sp-3); }
+  .stat-icon { width: 32px; height: 32px; flex-shrink: 0; }
+  .stat-num { font-size: var(--text-base); }
+  .stat-label { font-size: 11px; }
   .hero-ctas { flex-direction: column; }
   .hero-ctas .btn { width: 100%; justify-content: center; }
 
