@@ -727,13 +727,13 @@ button { cursor: pointer; background: none; border: none; }
 
 .ref-list li {
   font-size: var(--text-sm); color: var(--n-700);
-  padding-left: var(--sp-5); position: relative;
+  padding-left: var(--sp-8); position: relative;
   line-height: 1.75; word-break: keep-all; overflow-wrap: break-word;
   min-width: 0;
 }
 .ref-list li::before {
-  content: ''; position: absolute; left: 0; top: 10px;
-  width: 6px; height: 6px; border-radius: 50%;
+  content: ''; position: absolute; left: var(--sp-3); top: 11px;
+  width: 7px; height: 7px; border-radius: 50%;
   background: var(--em-500);
 }
 .ref-sub {
